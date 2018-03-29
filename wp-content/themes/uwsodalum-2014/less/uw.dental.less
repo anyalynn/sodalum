@@ -222,6 +222,11 @@ content:" \00BB";
   
   font-size: 30px;
   margin-left:20px;
+  
+   .uw-thinstrip .uw-wordmark {
+    background: url(assets/svg/uw-sprite.svg) no-repeat 0 -412px transparent;
+    height: 44px;
+  }
 }
 
 
@@ -326,11 +331,17 @@ content:" \00BB";
 		display:none;
 	
 	}
-	.uw-thinstrip .uw-wordmark {
- 
-    	background: url(assets/svg/uw-sprite.svg) no-repeat 0 -412px transparent;
-		height: 44px;
-	}
+	.uw-body .uw-site-title {
+    position: absolute;
+    top: -150px;
+    left: 11px;
+    color: #fff;
+    font-family: "Encode Sans Compressed", sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+  }
 
 	.uw-links ul li a{width:16%;float:left;border-right:1px solid #EBEBEB;padding-right:5px;}
 	.uw-links {margin-bottom:60px;-webkit-box-shadow:0 0 4px rgba(164,164,164,.5);box-shadow:0 0 4px rgba(164,164,164,.5);width:90%;padding-bottom:20px;}
@@ -580,179 +591,6 @@ table.alum-giving td {
 .provider{margin-top:5px;margin-bottom:5px; overflow:hidden;border-top:1px solid #ccc;padding-top:10px;}
 .provider img {padding:2px;border:#ccc 1px solid; float:left;margin-right:20px;}
 /**** Top Story, Slide show  ***/
-#top-story {
-	width: 95.2%;
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px 7px #E0E0E0;
-    margin: 20px 0 20px 0;
-    padding: 5px;
-    position: relative;
-}
-#top-story-text {
-    background-color: #4b2e83;
-	opacity: .9;
-    bottom: 5px;
-    left: 5px;
-    overflow: hidden;
-    position: absolute;
-    right: 5px;
-    padding: 10px 0 10px; }
-	
-#top-story-text-very-top {
-    background: #000000;
-    overflow: hidden;
-    padding: 10px 0 10px 80px; }
-	
-.mustard-times {
-	color:#d7a900;
-	font-family:"Times New Roman", Times, serif;
-	letter-spacing:normal;
-}
-
-#top-story-text-very-top p  {
-    color: #ffffff;
-    line-height: 22px;
-	letter-spacing:0.1em;
-	font-size:15px;
-    margin: 10px 10px; }
-
-#top-story-text-very-top .w  {
-	float:right;
-	margin:4px 60px 0 0;
-	height:50px;
-	width:68px;
-}
-
-#top-story-text-top {
-    background: #39275b;
-    overflow: hidden;
-    padding: 10px 0 10px 80px; }
-	
-#wisdom-teeth {
-	background: #39275b;
-	padding: 15px 20px; 
-	width:280px; 
-	float:left
-}
-#wisdom-teeth h1 {
-    color: #FFFFFF;
-    font-family: Arial;
-    font-weight: bold;
-    letter-spacing:0.05em;
-    line-height: 24px;
-    font-size: 22px; 
-}
-
-#wisdom-teeth h1.mustard {
-    color: #d7a900;
-    font-family: Arial;
-    font-weight: normal;
-	letter-spacing:0.1em;
-    line-height: 22px;
-    font-size: 22px; 
-	margin-bottom:0;
-}
-
-#wisdom-teeth p  {
-    color: #d7a900;
-    line-height: 20px;
-	font-size:14px;
-}
-	
-#wt-bottom {
-	clear:both;
-	background:#000000;
-	padding: 10px 40px 5px 40px; 
-	width:530px;
-}
-
-#wt-bottom h1 {
-	color: #ffffff;
-   	letter-spacing:0.1em;
-	font-size:19px;
-	line-height:0.9em;
-	font-weight:bold;
-	margin-top:-10px;
-	margin-bottom:10px;
-	padding:0;
-}
-	
-#wt-bottom p  {
-    line-height: 20px;
-	font-size:20px;
-	color:#d7a900;
-	font-family:Georgia, Times, serif;
-	letter-spacing:normal;
-	margin-bottom:10px;
-}
-
-#wt-bottom .w  {
-	float:right;
-	margin:4px 0px 3px 0;
-	height:50px;
-	width:68px;
-}	
-
-#top-story-text-bottom {
-    background: #d7a900;
-    overflow: hidden;
-    padding: 10px 30px 10px 30px; 
-	width:550px;}
-
-#top-story-text-top h1 {
-    color: #FFFFFF;
-    font-family: Arial;
-    font-weight: bold;
-    margin: 20px 0px 5px 10px;
-    line-height: 44px;
-    font-size: 40px; 
-}
-#top-story-text-bottom p  {
-    color: #000000;
-    line-height: 22px;
-	font-size:16px;
-    margin: 20px 10px; }
-	
-#top-story-text-bottom p.purple {
-	color:#39275b;
-}
-
-#top-story-text-top p  {
-    color: #d7a900;
-    line-height: 22px;
-	font-size:16px;
-    margin: 20px 10px; }
-
-#top-story-text-top a {
-	color: #fff;
-}
-
-#top-story-text h2, #top-story-text h3 {
-    color: #FFFFFF;
-    font-weight: normal;
-    margin: 0 10px 5px;
-    line-height: 22px;
-    font-size: 20px; }
-
-#top-story-text p, .slideshow-description p {
-    color: #FFFFFF;
-    line-height: 16px;
-    margin: 0 10px 0; }
-
-#top-story-text p a, .slideshow-description p a {
-    color: #fff;
-    margin: 0 0 0 11px;
-    font-size: 11px; }
-
-.top-story-more { text-transform: uppercase }
-
-.top-story-more:after {
-    content: " \25B8";
-    display: inline; }
-
-.top-story-more:hover,
-.top-story-more:hover { color: #f4df91 }
-
 
 /** From dental2014.css **/
 .imgLeft {
@@ -810,79 +648,7 @@ img.faculty
 }
 
 @media (min-width: 768px) {  
-	#wisdom-teeth {
-		background: #39275b;
-		padding: 15px 20px; 
-		width:280px; 
-		float:left}
-	#wisdom-teeth h1 {
-    	color: #FFFFFF;
-	    font-family: Arial;
-    	font-weight: bold;
-		letter-spacing:0.05em;
-    	line-height: 24px;
-	    font-size: 22px; 
-	}
-
-	#wisdom-teeth h1.mustard {
-    	color: #d7a900;
-	    font-family: Arial;
-    	font-weight: normal;
-	    letter-spacing:0.1em;
-    	line-height: 22px;
-	    font-size: 22px; 
-		margin-bottom:0;
-	}
-	#wisdom-teeth p  {
-    	color: #d7a900;
-	    line-height: 20px;
-		font-size:14px;
-	 }
-	
-	#wt-bottom {
-		clear:both;
-		background:#000000;
-		padding: 10px 40px 5px 40px; 
-		width:530px;
-	}
-	#wt-bottom h1 {
-		color: #ffffff;
-	   	letter-spacing:0.1em;
-		font-size:19px;
-		line-height:0.9em;
-		font-weight:bold;
-		margin-top:-10px;
-		margin-bottom:10px;
-		padding:0;
-	}
-	
-	#wt-bottom p  {
-    	line-height: 20px;
-		font-size:20px;
-		color:#d7a900;
-		font-family:Georgia, Times, serif;
-		letter-spacing:normal;
-		margin-bottom:10px;
-	}
-
-	#wt-bottom .w  {
-		float:right;
-		margin:4px 0px 3px 0;
-		height:50px;
-		width:68px;
-	}	
-
-	.mustard-times {
-		color:#d7a900;
-		font-family:"Times New Roman", Times, serif;
-		letter-spacing:normal;
-	}
-	#top-story-text-bottom {
-    	background: #d7a900;
-	    overflow: hidden;
-    	padding: 10px 30px 10px 30px; 
-		width:550px;}
-	
+		
 	.fltRight {
 		float:right;
 		margin-left:10px;
@@ -901,88 +667,6 @@ img.faculty
 	}
 }
 
-@media (max-width: 979px) {
-	#top-story-text-top, #top-story-text-very-top {
-    	padding: 10px 0 10px 10px; }
-	#top-story-text-bottom {
-    	padding: 10px 0 10px 10px; }
-}
-@media (max-width: 767px) {
-	#wisdom-teeth {
-		background: #39275b;
-		padding: 15px 10px; 
-		width:300px; 
-		float:none;
-		clear:both;}
-	#wisdom-teeth h1 {
-    	color: #FFFFFF;
-	    font-family: Arial;
-    	font-weight: bold;
-	    letter-spacing:0.05em;
-    	line-height: 24px;
-	    font-size: 20px; 
-	}
-
-	#wisdom-teeth h1.mustard {
-    	color: #d7a900;
-	    font-family: Arial;
-    	font-weight: normal;
-	    letter-spacing:0.1em;
-	    line-height: 22px;
-    	font-size: 20px; 
-		margin-bottom:0;
-	}
-	#wisdom-teeth p  {
-    	color: #d7a900;
-	    line-height: 20px;
-		font-size:14px;
-		margin:0 10px;
-	 }
-	
-	#wt-bottom {
-		clear:both;
-		background:#000000;
-		padding: 10px 10px 5px 10px; 
-		width:300px;
-	}
-	#wt-bottom h1 {
-		color: #ffffff;
-	   	letter-spacing:0.1em;
-		font-size:16px;
-		line-height:0.9em;
-		font-weight:bold;
-		margin-top:-10px;
-		margin-bottom:10px;
-		padding:0;
-	}
-	
-	#wt-bottom p  {
-		line-height: 20px;
-		font-size:16px;
-		color:#d7a900;
-		font-family:Georgia, Times, serif;
-		letter-spacing:normal;
-		margin-bottom:10px;
-	}
-
-	#wt-bottom .w  {
-		float:right;
-		margin:4px 0px 3px 0;
-		height:50px;
-		width:68px;
-	}	
-
-	.mustard-times {
-		color:#d7a900;
-		font-family:"Times New Roman", Times, serif;
-		letter-spacing:normal;
-	}
-	#top-story-text-bottom {
-	    background: #d7a900;
-	    clear:both;
-    	padding: 10px 10px 10px 10px; 
-		width:300px;}
-}
 
 @media (max-width: 480px) {
 	#top-story-text h2 {
@@ -1008,9 +692,133 @@ img.faculty
 }
 
 table.small th, table.small td, table.small td p { font-size:80%;}
-/****  Alumni Events   *****/
+wp-caption-text {
+  padding: 5px 0 0 5px;
+ }
+ 
+.white-img-border {
+	 padding:3%;
+	 border:#cccccc 1px solid;
+ }
+ 
 
-.table td p.small {
-	font-size:80%;
-	
+.pic-text-widget {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+ input[type="text"].wTextInput { width:190px;}
+ 
+ 
+.uw-rss-widget a.rss-more { margin-left:0px; margin-top:10px; padding-right:0;}
+.pic-text-more { margin-left:5px; margin-top:5px;}
+
+#hero-bg {
+  position: relative;
+  padding: 90px 0;
+}
+#hero-bg div.orig,
+#hero-bg div.blrd {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#hero-container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding-left: 50px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+#hero-container h1 {
+  font-family: "Encode Sans Compressed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  color: #fff;
+}
+#hero-container p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 23px;
+  margin: 0 0 30px;
+  width: 70%;
+}
+.uw-site-title-blank {
+  font-size: 50px;
+  padding-top: 20px;
+  color: #4b2e83;
+}
+.no-title h1.uw-site-title-blank {
+  display: none;
+}
+.hero-content {
+  margin-top: 20px;
+}
+.hero-height2 {
+  height: 245px;
+}
+.hero-height2 .container {
+  height: 145px;
+  line-height: 145px;
+}
+.hero-height2 h1 {
+  font-family: "Encode Sans Compressed", sans-serif;
+  text-transform: uppercase;
+  color: #FFF !important;
+  font-weight: 900;
+  font-size: 60px;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  vertical-align: bottom;
+}
+.hero-height2 h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 360px;
+  left: -140px;
+  opacity: .3;
+  width: 600px;
+  background: url(assets/svg/slashes-light.svg) no-repeat 0 0;
+  z-index: 0;
+}
+.hero-height2:after {
+  display: none;
+}
+.hero-height2 .udub-slant {
+  margin-top: 22px;
+}
+.hero-height2 .udub-slant span {
+  background-color: #e8e3d3;
+}
+.hero-blank {
+  height: auto;
+  background-color: transparent;
+}
+.hero-blank:before,
+.hero-blank:after {
+  display: none;
+}
+.wpcf7 span:before,
+.alum-renew span:before,
+#mc-embedded-subscribe-form span:before {
+  display: none;
+}
+.mc-field-group {
+  margin-top: 20px;
 }
