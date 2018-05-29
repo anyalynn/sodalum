@@ -23,6 +23,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-25627765-4', 'auto');
+  ga('set', 'anonymizeIP', true);
   ga('send', 'pageview');
 
 </script>
