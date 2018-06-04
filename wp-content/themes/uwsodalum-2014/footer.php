@@ -9,13 +9,7 @@
         <nav role="navigation" aria-label="social networking">
             <ul class="footer-social">
                 <li><a class="facebook" href="https://www.facebook.com/pages/The-University-of-Washington-School-of-Dentistry/160752227303910">Facebook</a></li>
-                <li><a class="twitter" href="http://twitter.com/UW">Twitter</a></li>
-                <li><a class="instagram" href="http://instagram.com/uofwa">Instagram</a></li>
-                <li><a class="tumblr" href="http://uofwa.tumblr.com/">Tumblr</a></li>
-                <li><a class="youtube" href="http://www.youtube.com/user/uwhuskies">YouTube</a></li>
-                <li><a class="linkedin" href="http://www.linkedin.com/company/university-of-washington">LinkedIn</a></li>
-                <li><a class="pinterest" href="http://www.pinterest.com/uofwa/">Pinterest</a></li>
-                <li><a class="vine" href="https://vine.co/uofwa">Vine</a></li>
+             
                 <li><a class="google" href="https://plus.google.com/b/108816227097181482651/108816227097181482651/about?cfem=1">Google+</a></li>
             </ul>
         </nav>
@@ -26,7 +20,7 @@
                 <li><a href="http://sodalum.wpengine.com/contact/">Contact Us</a></li>
                   <li><a href="http://www.washington.edu/safety">Campus Safety</a></li>
                               <li><a href="http://www.washington.edu/admin/rules/wac/rulesindex.html">Rules Docket</a></li>
-                <li><a href="http://www.washington.edu/online/privacy/">Privacy</a></li>
+                <li><a href="https://dental.washington.edu/privacy/">Privacy</a></li>
                 <li><a href="http://www.washington.edu/online/terms/">Terms</a></li>
             </ul>
         </nav>
