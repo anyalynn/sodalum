@@ -349,7 +349,7 @@ padding-left: 0px !important;
 </li>
 <li class="dawgdrops-item"><a href="https://sodalum.uw.edu/contact/" title="Contact"  id="1853">Contact</a></li>
 </ul></div></nav>
-            <div class="uw-hero-image" style="background-image:url('http://sodalum.uw.edu/wp-content/uploads/2018/06/cropped-Dental-School-2084.jpg');"></div>
+            <div class="uw-hero-image" style="background-image:url('https://sodalum.uw.edu/wp-content/uploads/2016/03/cropped-cropped-blossoms.jpg');"></div>
             <div class="container uw-body">
 
                 <div clas="row">
