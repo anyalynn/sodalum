@@ -11159,7 +11159,7 @@ UW.Search = Backbone.View.extend({
 
                     '<input type="submit" value="search" class="search" tabindex="-1"/>'+
 
-                    '<div class="labels hidden-xs">'+
+                    '<div class="labels hidden-xs" style="display:none;">'+
                     //  '<label class="radio">'+
                      //   '<input type="radio" name="search" value="uw" data-toggle="radio"  />'+
                      //   'All the UW'+
