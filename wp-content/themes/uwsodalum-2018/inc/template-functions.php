@@ -40,14 +40,20 @@ endif;
 if ( ! function_exists( 'uw_dropdowns') ) :
   function uw_dropdowns()
   {
-
-    echo '<nav id="dawgdrops" aria-label="Main menu"><div class="dawgdrops-inner container" role="application">';
-
+	   echo '<nav id="main-nav" aria-label="Main menu"><div class="container">';
+echo '<input id="main-menu-state" type="checkbox" />
+<label class="main-menu-btn" for="main-menu-state">
+  <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+</label>';
+   
+ 
+          
     echo  wp_nav_menu( array(
             'theme_location'  => UW_Dropdowns::LOCATION,
             'container'       => false,
             //'container_class' => 'dawgdrops-inner container',
-            'menu_class'      => 'dawgdrops-nav',
+            'menu_class'      => 'sm sm-blue',
+			'menu_id'		  =>  'main-menu',
             'fallback_cb'     => '',
             'walker'          => new UW_Dropdowns_Walker_Menu()
           ) );
