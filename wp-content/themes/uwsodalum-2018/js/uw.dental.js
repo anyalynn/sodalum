@@ -27,87 +27,6 @@ $.fn.serializeObject = function()
    return o;
 };
    
-function formVal()
-{
-	memTypeLabel.style.border = '';
-	userAlumMemName.style.border = '';
-	userEmail.style.border = '';
-	userGradYr.style.border = '';
-	recurLabel.style.border = '';
-	var memType = getRadioBtnValue("MemType");
-	$("#userMemType").val(memType);
-	switch (memType){
-		case "Regular Member":
-			$("#ItemCost1").val("120.00");
-		case "New Member":
-			$("#ItemCost1").val("50.00");
-		case "Associate Member":
-			$("#ItemCost1").val("120.00");
-	}
-	var recur =getRadioBtnValue("userAnnualRecur");
-	if(recur == "Yes"){
-		$("#ItemQty2").val("1");
-	}else{
-		$("#ItemQty2").val("0");
-	}
-	
-	
-
-	$("#ItemDesc1").val($("#userMemType").val() + "-" + $("#userAlumMemName").val() + "-" + $("#userGradYr").val());
-	$("#BillEmail").val($("#userEmail").val());
-	var bool=true;
-	if(document.getElementById("userMemType").value === "")
-		{
-			inval.style.display = 'block';
-			memTypeLabel.style.border = '2px solid red';
-			bool =  false;
-		}
-	if(document.getElementById("userAlumMemName").value === "")
-		{
-			inval.style.display = 'block';
-			userAlumMemName.style.border = '2px solid red';
-			bool =  false;
-		}
-	if(document.getElementById("userEmail").value === "")
-		{
-			inval.style.display = 'block';
-			userEmail.style.border = '2px solid red';
-			bool =  false;
-		}
-	if(document.getElementById("userGradYr").value === "")
-		{
-			inval.style.display = 'block';
-			userGradYr.style.border = '2px solid red';
-			bool =  false;
-		}
-	if(document.getElementById("ItemQty2").value === "")
-		{
-			inval.style.display = 'block';
-			recurLabel.style.border = '2px solid red';
-			bool =  false;
-		}
-		
-		$.ajax({
-                    type: 'POST',
-					url: 'https://dental.washington.edu/wp-content/converge/alumni.php',
-					data: $('#alum-renew').serializeObject(),
-					dataType: "json",
-					async:false,
-                    success: function(res) {
-                        if (res.status != 'successful') {
-                            bool = false;
-							inval.style.display = 'block';
-							inval_r.style.display="block";
-                        } else{
-						}
-						
-                    },error: function(){
-					}
-					
-                });
-		return bool;
-	
-}
 
 
 /*
@@ -360,7 +279,7 @@ function formVal()
 							}
 							$this.css({ zIndex: '', top: '', left: '', marginLeft: '', marginTop: '', display: '' });
 						}
-						if (($this.attr('id') || '').indexOf(self.accessIdPrefix) == 0) {
+						if (($this.attr('id') || '').indexOf(self.accessIdPrefix) === 0) {
 							$this.removeAttr('id');
 						}
 					})
@@ -377,7 +296,7 @@ function formVal()
 					.removeAttr('aria-expanded');
 				this.$root.find('a.has-submenu').each(function() {
 						var $this = $(this);
-						if ($this.attr('id').indexOf(self.accessIdPrefix) == 0) {
+						if ($this.attr('id').indexOf(self.accessIdPrefix) === 0) {
 							$this.removeAttr('id');
 						}
 					})
@@ -766,7 +685,7 @@ function formVal()
 			menuIframeShim: function($ul) {
 				// create iframe shim for the menu
 				if (IE && this.opts.overlapControlsInIE && !$ul.dataSM('ie-shim')) {
-					$ul.dataSM('ie-shim', $('<iframe/>').attr({ src: 'javascript:0', tabindex: -9 })
+					$ul.dataSM('ie-shim', $('<iframe/>').attr({ src: 'about:blank'})
 						.css({ position: 'absolute', top: 'auto', left: '0', opacity: 0, border: '0' })
 					);
 				}
@@ -1047,7 +966,7 @@ function formVal()
 							e.preventDefault();
 						} else { // touchend/pointerup
 							if (data.touchY !== undefined) {
-								if (data.momentum = Math.pow(Math.abs(touchPoint.pageY - data.touchStartY) / (e.timeStamp - data.touchStartTime), 2) * 15) {
+								if (data.momentum == Math.pow(Math.abs(touchPoint.pageY - data.touchStartY) / (e.timeStamp - data.touchStartTime), 2) * 15) {
 									this.menuScrollStop($sub);
 									this.menuScroll($sub);
 									e.preventDefault();
@@ -1179,13 +1098,14 @@ function formVal()
 				if (!this.handleEvents()) {
 					return;
 				}
+				var $sub = null;
 				switch (e.keyCode) {
 					case 27: // reset on Esc
 						var $activeTopItem = this.activatedItems[0];
 						if ($activeTopItem) {
 							this.menuHideAll();
 							$activeTopItem[0].focus();
-							var $sub = $activeTopItem.dataSM('sub');
+							$sub = $activeTopItem.dataSM('sub');
 							if ($sub) {
 								this.menuHide($sub);
 							}
@@ -1194,7 +1114,7 @@ function formVal()
 					case 32: // activate item's sub on Space
 						var $target = $(e.target);
 						if ($target.is('a') && this.handleItemEvents($target)) {
-							var $sub = $target.dataSM('sub');
+							$sub = $target.dataSM('sub');
 							if ($sub && !$sub.is(':visible')) {
 								this.itemClick({ currentTarget: e.target });
 								e.preventDefault();
