@@ -48,13 +48,9 @@ img {
 }
 .wp-media-credit  {
 	margin-left: 5px;
-	//font-weight: bold;
+	font-weight: bold;
 	font-style: italic;
 	font-size: 14px;
-}
-
-.credit-media-italic {
-	font-style: italic;
 }
 
 
@@ -73,16 +69,6 @@ img {
 		padding: 90px 0 50px 0;
 	}
 }
-
-
-// Remove source credit url from the pop image
-
-.wrapper p span.wp-media-credit {
-	color: #3d3d3d;
-	text-decoration: none;
-	cursor: default;
-}
-
 
 
 
@@ -123,7 +109,6 @@ img {
 	bottom: 0;
 	z-index: 999;
 	cursor: -webkit-zoom-out;
-	background-color: rgba(255,255,255,.95);
 
 	div.wrapper {
 	position:absolute;
@@ -138,18 +123,24 @@ img {
 			border: 1px solid #ECECEC;
 		}
 	}
-}
-@media only screen and (max-width : 1024px) {
-	.uw-overlay {
-		cursor: pointer;
+
+	&:before {
+		content:" ";
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: white;
+		opacity: 0.9;
 	}
 }
+
+
 @media only screen and (max-width : 767px) {
-	.uw-overlay {
-		cursor: pointer;
-	}
-	.alignright,
-	.alignleft,
+
+	.alignright, 
+	.alignleft, 
 	.alignnone {
 		float: none;
 		margin: 20px 20px 20px 0px;

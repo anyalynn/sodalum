@@ -1,14 +1,9 @@
 #uwalert-alert-message {
   padding: 0 20px 40px;
   position: relative;
-  z-index: 1;
 }
 #uwalert-alert-message h1 {
   color: white;
-  font-size: 25px;
-}
-#uwalert-alert-message a.more:after {
-  background-position: -239px -492px;
 }
 #uwalert-alert-message p {
   color: white;
@@ -17,10 +12,6 @@
 }
 #uwalert-alert-message a.more {
   color: #FDE048;
-  display: inline-block;
-}
-#uwalert-alert-message a.more:after {
-  bottom: 3px;
 }
 #uwalert-alert-message.uwalert-red,
 #uwalert-alert-message.red-alert-urgent {

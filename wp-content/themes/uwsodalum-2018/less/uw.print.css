@@ -57,7 +57,7 @@
   .site-regents h2 {
     font-size: 20px  !important;
   }
-  .site-regents div.uw-site-title {
+  .site-regents h2.uw-site-title {
     font-size: 40px !important;
   }
   .site-regents h3,
