@@ -2891,351 +2891,6 @@ td.visible-print {
     display: none !important;
   }
 }
-@font-face {
-  font-family: 'Encode Sans Compressed';
-  src: url('assets/fonts/encodesanscondensed-400-regular-webfont.eot');
-  src: url('assets/fonts/encodesanscondensed-400-regular-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscondensed-400-regular-webfont.woff') format('woff'), url('assets/fonts/encodesanscondensed-400-regular-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscondensed-400-regular-webfont.svg#encodesanscondensed-400-regular-webfont') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Encode Sans Compressed';
-  src: url('assets/fonts/encodesanscondensed-500-medium-webfont.eot');
-  src: url('assets/fonts/encodesanscondensed-500-medium-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscondensed-500-medium-webfont.woff') format('woff'), url('assets/fonts/encodesanscondensed-500-medium-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscondensed-500-medium-webfont.svg#encodesanscondensed-500-medium-webfont') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Encode Sans Compressed';
-  src: url('assets/fonts/encodesanscompressed-600-semibold-webfont.eot');
-  src: url('assets/fonts/encodesanscompressed-600-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-600-semibold-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-600-semibold-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-600-semibold-webfont.svg#encodesanscompressed-600-semibold-webfont') format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Encode Sans Compressed';
-  src: url('assets/fonts/encodesanscompressed-700-bold-webfont.eot');
-  src: url('assets/fonts/encodesanscompressed-700-bold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-700-bold-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-700-bold-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-700-bold-webfont.svg#encodesanscompressed-700-bold-webfont') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Encode Sans Compressed';
-  src: url('assets/fonts/encodesanscompressed-800-extrabold-webfont.eot');
-  src: url('assets/fonts/encodesanscompressed-800-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-800-extrabold-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-800-extrabold-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-800-extrabold-webfont.svg#encodesanscompressed-800-extrabold-webfont') format('svg');
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Encode Sans Compressed';
-  src: url('assets/fonts/encodesanscompressed-900-black-webfont.eot');
-  src: url('assets/fonts/encodesanscompressed-900-black-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-900-black-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-900-black-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-900-black-webfont.svg#encodesanscompressed-900-black-webfont') format('svg');
-  font-weight: 900;
-  font-style: normal;
-}
-.dropdown-arrow-inverse {
-  border-bottom-color: #4b2e83 !important;
-  border-top-color: #4b2e83 !important;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  line-height: 1.72222;
-  color: #595959;
-  background-color: #ffffff;
-}
-a {
-  color: #0088dd;
-  text-decoration: none;
-  -o-transition: 0.25s;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-a:hover,
-a:focus {
-  color: #c9c9c9;
-  text-decoration: none;
-}
-a:focus {
-  outline: none;
-}
-.img-rounded {
-  border-radius: 6px;
-}
-.img-thumbnail {
-  padding: 4px;
-  line-height: 1.72222;
-  background-color: #ffffff;
-  border: 2px solid #bdc3c7;
-  border-radius: 6px;
-  -o-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  width: 100% \9;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-.img-comment {
-  font-size: 15px;
-  line-height: 1.2;
-  font-style: italic;
-  margin: 24px 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 800;
-  line-height: 1.3;
-  color: inherit;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small {
-  color: #e9e6f0;
-}
-h1,
-h2,
-h3 {
-  margin-top: 29px;
-  margin-bottom: 14.5px;
-}
-h4,
-h5,
-h6 {
-  margin-top: 14.5px;
-  margin-bottom: 14.5px;
-}
-h6 {
-  font-weight: normal;
-}
-h1,
-.h1 {
-  font-size: 37px;
-}
-h2,
-.h2 {
-  font-size: 31px;
-}
-h3,
-.h3 {
-  font-size: 24px;
-}
-h4,
-.h4 {
-  font-size: 21px;
-}
-h5,
-.h5 {
-  font-size: 18px;
-}
-h6,
-.h6 {
-  font-size: 19px;
-}
-p {
-  font-size: 17px;
-  line-height: 1.72222;
-  margin: 0 0 14.5px;
-  font-weight: normal;
-  color: #3d3d3d;
-  -webkit-font-smoothing: antialiased;
-}
-.lead {
-  margin-bottom: 29px;
-  font-size: 26px;
-  line-height: 1.46428571;
-  font-weight: 300;
-}
-@media (min-width: 768px) {
-  .lead {
-    font-size: 28.339px;
-  }
-}
-small,
-.small {
-  font-size: 83%;
-  line-height: 2.067;
-}
-.text-muted {
-  color: #bdc3c7;
-}
-.text-inverse {
-  color: #ffffff;
-}
-.text-primary {
-  color: #4b2e83;
-}
-a.text-primary:hover {
-  color: #35215d;
-}
-a.text-primary:hover {
-  color: #3c2569;
-}
-.text-warning {
-  color: #f1c40f;
-}
-a.text-warning:hover {
-  color: #c29d0b;
-}
-a.text-warning:hover {
-  color: #c19d0c;
-}
-.text-danger {
-  color: #e74c3c;
-}
-a.text-danger:hover {
-  color: #d62c1a;
-}
-a.text-danger:hover {
-  color: #b93d30;
-}
-.text-success {
-  color: #2ecc71;
-}
-a.text-success:hover {
-  color: #25a25a;
-}
-a.text-success:hover {
-  color: #25a35a;
-}
-.text-info {
-  color: #3498db;
-}
-a.text-info:hover {
-  color: #217dbb;
-}
-a.text-info:hover {
-  color: #2a7aaf;
-}
-.bg-primary {
-  color: #ffffff;
-  background-color: #4b2e83;
-}
-a.bg-primary:hover {
-  background-color: #35215d;
-}
-a.bg-primary:hover {
-  background-color: #35215d;
-}
-.bg-success {
-  background-color: #dff0d8;
-}
-a.bg-success:hover {
-  background-color: #c1e2b3;
-}
-a.bg-success:hover {
-  background-color: #c1e2b3;
-}
-.bg-info {
-  background-color: #d9edf7;
-}
-a.bg-info:hover {
-  background-color: #afd9ee;
-}
-a.bg-info:hover {
-  background-color: #afd9ee;
-}
-.bg-warning {
-  background-color: #fcf8e3;
-}
-a.bg-warning:hover {
-  background-color: #f7ecb5;
-}
-a.bg-warning:hover {
-  background-color: #f7ecb5;
-}
-.bg-danger {
-  background-color: #f2dede;
-}
-a.bg-danger:hover {
-  background-color: #e4b9b9;
-}
-a.bg-danger:hover {
-  background-color: #e4b9b9;
-}
-.page-header {
-  padding-bottom: 13.5px;
-  margin: 58px 0 29px;
-  border-bottom: 1px solid #e9e6f0;
-}
-ul,
-ol {
-  margin-bottom: 14.5px;
-}
-dl {
-  margin-bottom: 29px;
-}
-dt,
-dd {
-  line-height: 1.72222;
-}
-@media (min-width: 768px) {
-  .dl-horizontal dt {
-    width: 160px;
-  }
-  .dl-horizontal dd {
-    margin-left: 180px;
-  }
-}
-abbr[title],
-abbr[data-original-title] {
-  border-bottom: 1px dotted #bdc3c7;
-}
-blockquote {
-  border-left: 3px solid #e9e6f0;
-  padding: 0 0 0 16px;
-  margin: 0 0 29px;
-}
-blockquote p {
-  font-size: 19px;
-  line-height: 1.55;
-  font-weight: normal;
-  margin-bottom: .4em;
-}
-blockquote small,
-blockquote .small {
-  font-size: 17px;
-  line-height: 1.72222;
-  font-style: italic;
-  color: inherit;
-}
-blockquote small:before,
-blockquote .small:before {
-  content: "";
-}
-blockquote.pull-right {
-  padding-right: 16px;
-  padding-left: 0;
-  border-right: 3px solid #e9e6f0;
-  border-left: 0;
-}
-blockquote.pull-right small:after {
-  content: "";
-}
-address {
-  margin-bottom: 29px;
-  line-height: 1.72222;
-}
 .page-id-263 .uw-hero-image {
   background-image: url("http://sodalum.staging.wpengine.com/wp-content/uploads/2018/10/1950s-partial.jpg") !important;
   background-position: center;
@@ -5482,6 +5137,351 @@ table.services a {
     height: 60%;
     margin: 10px;
   }
+}
+@font-face {
+  font-family: 'Encode Sans Compressed';
+  src: url('assets/fonts/encodesanscondensed-400-regular-webfont.eot');
+  src: url('assets/fonts/encodesanscondensed-400-regular-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscondensed-400-regular-webfont.woff') format('woff'), url('assets/fonts/encodesanscondensed-400-regular-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscondensed-400-regular-webfont.svg#encodesanscondensed-400-regular-webfont') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Encode Sans Compressed';
+  src: url('assets/fonts/encodesanscondensed-500-medium-webfont.eot');
+  src: url('assets/fonts/encodesanscondensed-500-medium-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscondensed-500-medium-webfont.woff') format('woff'), url('assets/fonts/encodesanscondensed-500-medium-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscondensed-500-medium-webfont.svg#encodesanscondensed-500-medium-webfont') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Encode Sans Compressed';
+  src: url('assets/fonts/encodesanscompressed-600-semibold-webfont.eot');
+  src: url('assets/fonts/encodesanscompressed-600-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-600-semibold-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-600-semibold-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-600-semibold-webfont.svg#encodesanscompressed-600-semibold-webfont') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Encode Sans Compressed';
+  src: url('assets/fonts/encodesanscompressed-700-bold-webfont.eot');
+  src: url('assets/fonts/encodesanscompressed-700-bold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-700-bold-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-700-bold-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-700-bold-webfont.svg#encodesanscompressed-700-bold-webfont') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Encode Sans Compressed';
+  src: url('assets/fonts/encodesanscompressed-800-extrabold-webfont.eot');
+  src: url('assets/fonts/encodesanscompressed-800-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-800-extrabold-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-800-extrabold-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-800-extrabold-webfont.svg#encodesanscompressed-800-extrabold-webfont') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Encode Sans Compressed';
+  src: url('assets/fonts/encodesanscompressed-900-black-webfont.eot');
+  src: url('assets/fonts/encodesanscompressed-900-black-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/encodesanscompressed-900-black-webfont.woff') format('woff'), url('assets/fonts/encodesanscompressed-900-black-webfont.ttf') format('truetype'), url('assets/fonts/encodesanscompressed-900-black-webfont.svg#encodesanscompressed-900-black-webfont') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+.dropdown-arrow-inverse {
+  border-bottom-color: #4b2e83 !important;
+  border-top-color: #4b2e83 !important;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.72222;
+  color: #595959;
+  background-color: #ffffff;
+}
+a {
+  color: #0088dd;
+  text-decoration: none;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover,
+a:focus {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.72222;
+  background-color: #ffffff;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 100% \9;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-comment {
+  font-size: 15px;
+  line-height: 1.2;
+  font-style: italic;
+  margin: 24px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 800;
+  line-height: 1.3;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  color: #e9e6f0;
+}
+h1,
+h2,
+h3 {
+  margin-top: 29px;
+  margin-bottom: 14.5px;
+}
+h4,
+h5,
+h6 {
+  margin-top: 14.5px;
+  margin-bottom: 14.5px;
+}
+h6 {
+  font-weight: normal;
+}
+h1,
+.h1 {
+  font-size: 37px;
+}
+h2,
+.h2 {
+  font-size: 31px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 21px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 19px;
+}
+p {
+  font-size: 17px;
+  line-height: 1.72222;
+  margin: 0 0 14.5px;
+  font-weight: normal;
+  color: #3d3d3d;
+  -webkit-font-smoothing: antialiased;
+}
+.lead {
+  margin-bottom: 29px;
+  font-size: 26px;
+  line-height: 1.46428571;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .lead {
+    font-size: 28.339px;
+  }
+}
+small,
+.small {
+  font-size: 83%;
+  line-height: 2.067;
+}
+.text-muted {
+  color: #bdc3c7;
+}
+.text-inverse {
+  color: #ffffff;
+}
+.text-primary {
+  color: #4b2e83;
+}
+a.text-primary:hover {
+  color: #35215d;
+}
+a.text-primary:hover {
+  color: #3c2569;
+}
+.text-warning {
+  color: #f1c40f;
+}
+a.text-warning:hover {
+  color: #c29d0b;
+}
+a.text-warning:hover {
+  color: #c19d0c;
+}
+.text-danger {
+  color: #e74c3c;
+}
+a.text-danger:hover {
+  color: #d62c1a;
+}
+a.text-danger:hover {
+  color: #b93d30;
+}
+.text-success {
+  color: #2ecc71;
+}
+a.text-success:hover {
+  color: #25a25a;
+}
+a.text-success:hover {
+  color: #25a35a;
+}
+.text-info {
+  color: #3498db;
+}
+a.text-info:hover {
+  color: #217dbb;
+}
+a.text-info:hover {
+  color: #2a7aaf;
+}
+.bg-primary {
+  color: #ffffff;
+  background-color: #4b2e83;
+}
+a.bg-primary:hover {
+  background-color: #35215d;
+}
+a.bg-primary:hover {
+  background-color: #35215d;
+}
+.bg-success {
+  background-color: #dff0d8;
+}
+a.bg-success:hover {
+  background-color: #c1e2b3;
+}
+a.bg-success:hover {
+  background-color: #c1e2b3;
+}
+.bg-info {
+  background-color: #d9edf7;
+}
+a.bg-info:hover {
+  background-color: #afd9ee;
+}
+a.bg-info:hover {
+  background-color: #afd9ee;
+}
+.bg-warning {
+  background-color: #fcf8e3;
+}
+a.bg-warning:hover {
+  background-color: #f7ecb5;
+}
+a.bg-warning:hover {
+  background-color: #f7ecb5;
+}
+.bg-danger {
+  background-color: #f2dede;
+}
+a.bg-danger:hover {
+  background-color: #e4b9b9;
+}
+a.bg-danger:hover {
+  background-color: #e4b9b9;
+}
+.page-header {
+  padding-bottom: 13.5px;
+  margin: 58px 0 29px;
+  border-bottom: 1px solid #e9e6f0;
+}
+ul,
+ol {
+  margin-bottom: 14.5px;
+}
+dl {
+  margin-bottom: 29px;
+}
+dt,
+dd {
+  line-height: 1.72222;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    width: 160px;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+abbr[title],
+abbr[data-original-title] {
+  border-bottom: 1px dotted #bdc3c7;
+}
+blockquote {
+  border-left: 3px solid #e9e6f0;
+  padding: 0 0 0 16px;
+  margin: 0 0 29px;
+}
+blockquote p {
+  font-size: 19px;
+  line-height: 1.55;
+  font-weight: normal;
+  margin-bottom: .4em;
+}
+blockquote small,
+blockquote .small {
+  font-size: 17px;
+  line-height: 1.72222;
+  font-style: italic;
+  color: inherit;
+}
+blockquote small:before,
+blockquote .small:before {
+  content: "";
+}
+blockquote.pull-right {
+  padding-right: 16px;
+  padding-left: 0;
+  border-right: 3px solid #e9e6f0;
+  border-left: 0;
+}
+blockquote.pull-right small:after {
+  content: "";
+}
+address {
+  margin-bottom: 29px;
+  line-height: 1.72222;
 }
 /* Styles necessary for quicklinks */
 #uw-container {
