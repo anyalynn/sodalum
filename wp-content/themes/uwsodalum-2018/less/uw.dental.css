@@ -1,6 +1,8 @@
+
 body.page-template-big-hero .uw-hero-image {
   height: 450px;
 }
+
 .uw-thinstrip .uw-wordmark {
   display: block;
   position: absolute;
@@ -11,8 +13,11 @@ body.page-template-big-hero .uw-hero-image {
   height: 24px;
   background: url(assets/svg/uw-sprite.svg) no-repeat 0 -431px transparent;
 }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+
+
   .uw-thinstrip .uw-wordmark {
     width: 155px;
     height: 34px;
@@ -24,8 +29,12 @@ body.page-template-big-hero .uw-hero-image {
     top: 4px;
     background-size: 397px;
   }
+
 }
+
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   .uw-thinstrip .uw-wordmark {
     left: 100px;
     -o-transform: scale(0.8, 0.8);
@@ -34,6 +43,7 @@ body.page-template-big-hero .uw-hero-image {
     transform: scale(0.8, 0.8);
   }
 }
+
 .uw-hero-image,
 .no-uw-hero-image {
   height: 170px;
@@ -146,6 +156,7 @@ body.page-template-big-hero .uw-hero-image {
 .page-template-templatestemplate-no-title-php ul.uw-sidebar-menu {
   margin-top: -20px;
 }
+
 #hero-bg {
   position: relative;
   padding: 90px 0;
@@ -337,6 +348,7 @@ hr {
   font-size: 15px;
   line-height: 1.5;
 }
+
 @media only screen and (min-width: 768px) {
   .uw-body .uw-site-title {
     position: absolute;
@@ -588,30 +600,27 @@ hr {
   background: transparent;
   background-color: transparent;
 }
+
 .wp-caption-text {
   padding: 5px 0 0 5px;
-}
+ }
+
 .white-img-border {
-  padding: 3%;
-  border: #cccccc 1px solid;
-}
+	 padding:3%;
+	 border:#cccccc 1px solid;
+ }
+
+
 .pic-text-widget {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
-input[type="text"].wTextInput {
-  width: 190px;
-}
-.uw-rss-widget a.rss-more {
-  margin-left: 0px;
-  margin-top: 10px;
-  padding-right: 0;
-}
-.pic-text-more {
-  margin-left: 5px;
-  margin-top: 5px;
-}
+ input[type="text"].wTextInput { width:190px;}
+
+
+.uw-rss-widget a.rss-more { margin-left:0px; margin-top:10px; padding-right:0;}
+.pic-text-more { margin-left:5px; margin-top:5px;}

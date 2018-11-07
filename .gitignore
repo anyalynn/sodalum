@@ -102,8 +102,8 @@ wp-content/mysql.sql
 *.log
 
 #node
-wp-content/themes/uwsod-2014/node_modules/*
-wp-content/themes/uwsod-2018/node_modules/*
-wp-content/themes/uwsod-2018/node_modules/
-wp-content/themes/uwsod-2018/package-lock.json
-wp-content/themes/uwsod-2018/package.json
+wp-content/themes/uwsodalum-2014/node_modules/*
+wp-content/themes/uwsodalum-2018/node_modules/*
+wp-content/themes/uwsodalum-2018/node_modules/
+wp-content/themes/uwsodalum-2018/package-lock.json
+wp-content/themes/uwsodalum-2018/package.json
