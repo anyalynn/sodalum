@@ -2896,7 +2896,7 @@ td.visible-print {
   opacity: 0.5;
 }
 .dawgdrops-menu {
-  top: 45px;
+  top: 45px !important;
 }
 .search-form-wrapper {
   float: left;
