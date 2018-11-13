@@ -11144,15 +11144,7 @@ UW.Search = Backbone.View.extend({
 
                       '<input type="submit" value="search" class="search" tabindex="0"/>'+
 
-                        '<fieldset style="margin: 0; padding: 0; border: 1px; solid #ffffff;">'+
-
-                        '<div role="radiogroup" id="search-labels" class="labels hidden-xs">'+
-                          
- 
-                           '<label class="radio">'+
-                             '<input role="radio" class="radiobtn" type="radio" name="search" value="site" data-toggle="radio" selected/>'+
-                             'Current site'+
-                           '</label>'+
+                       
  
                          '</form>'+
                        '</div>'+
@@ -11171,10 +11163,7 @@ UW.Search = Backbone.View.extend({
   // Toggling the radio buttons changes the function of the search bar from searching the UW and searching the current site
   events :
   {
-    'click label.radio' : 'toggleSearchFeature',
-    'change select' : 'toggleSearchFeature',
     'click .search' : 'submitForm',
-    'submit form' : 'submitSearch',
     // Accessibility events
     'keydown' : 'handleKeyDown',
     'focus input' : 'skipToContentIfHidden'
@@ -11192,7 +11181,6 @@ UW.Search = Backbone.View.extend({
 
     this.toggle.on( 'open', this.toggleBlur, this )
 
-    this.searchFeature = this.$el.find(':radio:checked').val()
   },
 
   // Render the search bar above the `body` element and set the view element to the search bar HTML
@@ -11235,36 +11223,10 @@ UW.Search = Backbone.View.extend({
     }
   },
 
-  // Set a property to the current radio button indicating which function the search bar is providing.
-  // todo: clean up
-  toggleSearchFeature : function( event )
-  {
-    var value = $( event.currentTarget ).find( 'input' ).val()
-    this.searchFeature = value
-  },
 
   // Skip the search if it is hidden when tabbing through
   skipToContentIfHidden: function() {
     if ( ! this.toggle.settings.isOpen ) $('#main-content').focus()
-  },
-
-  // Determine if the client wants to search current site or the entire UW
-  submitSearch : function( e )
-  {
-    this.$el.find( 'input.radiobtn' ).attr('disabled', 'disabled')
-    switch ( this.searchFeature )
-    {
-      case this.searchFeatures.uw :
-        this.$el.find( '#uw-search-bar' ).attr( 'name', 'q' )
-        this.$el.find( 'form' ).attr( 'action', Backbone.history.location.protocol + '//uw.edu/search/' )
-        return true;
-
-      case this.searchFeatures.site :
-        return true;
-
-      default:
-        return false;
-    }
   },
 
   submitForm : function()
