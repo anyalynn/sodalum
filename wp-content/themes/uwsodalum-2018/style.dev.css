@@ -2895,6 +2895,9 @@ td.visible-print {
   background: url("http://sodalum.staging.wpengine.com/wp-content/uploads/2018/10/1950s-partial.jpg") center !important;
   opacity: 0.5;
 }
+.dawgdrops-menu {
+  top: 45px;
+}
 .search-form-wrapper {
   float: left;
   width: 80%;
