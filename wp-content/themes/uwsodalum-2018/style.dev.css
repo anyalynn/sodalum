@@ -3668,11 +3668,7 @@ a.more:after {
     background: #ffffff;
   }
   .uw-thinstrip .uw-wordmark {
-    width: 155px;
-    background: url(assets/svg/uw-sprite.svg) no-repeat transparent;
-    margin: 0;
-    float: none;
-    position: absolute;
+    top: 12px !important;
   }
   .uw-footer .footer-wordmark {
     background-size: 620px;
@@ -3711,8 +3707,9 @@ a.more:after {
     display: none;
   }
   .uw-thinstrip .uw-wordmark {
-    background: url(assets/svg/uw-sprite.svg) no-repeat 0 -412px transparent;
-    height: 44px;
+    background: url(assets/svg/uw-sprite.svg) no-repeat 0 -400px transparent !important;
+    height: 50px !important;
+    top: 0px !important;
   }
   .uw-links ul li a {
     width: 16%;
