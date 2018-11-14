@@ -1,34 +1,3 @@
-function getRadioBtnValue(name){
-	var btns = document.getElementsByName(name);
-		var btn_value;
-	for(var i = 0; i < btns.length; i++){
-    	if(btns[i].checked){
-        	btn_value = btns[i].value;
-		}
-	}
-	return btn_value
-}
-   
-
-$.fn.serializeObject = function()
-{
-   var o = {};
-   var a = this.serializeArray();
-   $.each(a, function() {
-       if (o[this.name]) {
-           if (!o[this.name].push) {
-               o[this.name] = [o[this.name]];
-           }
-           o[this.name].push(this.value || '');
-       } else {
-           o[this.name] = this.value || '';
-       }
-   });
-   return o;
-};
-   
-
-
 /*
  * SmartMenus jQuery v1.0.0
  * http://www.smartmenus.org/
@@ -279,7 +248,7 @@ $.fn.serializeObject = function()
 							}
 							$this.css({ zIndex: '', top: '', left: '', marginLeft: '', marginTop: '', display: '' });
 						}
-						if (($this.attr('id') || '').indexOf(self.accessIdPrefix) === 0) {
+						if (($this.attr('id') || '').indexOf(self.accessIdPrefix) == 0) {
 							$this.removeAttr('id');
 						}
 					})
@@ -296,7 +265,7 @@ $.fn.serializeObject = function()
 					.removeAttr('aria-expanded');
 				this.$root.find('a.has-submenu').each(function() {
 						var $this = $(this);
-						if ($this.attr('id').indexOf(self.accessIdPrefix) === 0) {
+						if ($this.attr('id').indexOf(self.accessIdPrefix) == 0) {
 							$this.removeAttr('id');
 						}
 					})
@@ -387,6 +356,7 @@ $.fn.serializeObject = function()
 					}
 					this.disabled = false;
 				}
+
 
 
 
@@ -685,7 +655,7 @@ $.fn.serializeObject = function()
 			menuIframeShim: function($ul) {
 				// create iframe shim for the menu
 				if (IE && this.opts.overlapControlsInIE && !$ul.dataSM('ie-shim')) {
-					$ul.dataSM('ie-shim', $('<iframe/>').attr({ src: 'about:blank'})
+					$ul.dataSM('ie-shim', $('<iframe/>').attr({ src: 'javascript:0', tabindex: -9 })
 						.css({ position: 'absolute', top: 'auto', left: '0', opacity: 0, border: '0' })
 					);
 				}
@@ -966,7 +936,7 @@ $.fn.serializeObject = function()
 							e.preventDefault();
 						} else { // touchend/pointerup
 							if (data.touchY !== undefined) {
-								if (data.momentum == Math.pow(Math.abs(touchPoint.pageY - data.touchStartY) / (e.timeStamp - data.touchStartTime), 2) * 15) {
+								if (data.momentum = Math.pow(Math.abs(touchPoint.pageY - data.touchStartY) / (e.timeStamp - data.touchStartTime), 2) * 15) {
 									this.menuScrollStop($sub);
 									this.menuScroll($sub);
 									e.preventDefault();
@@ -1098,14 +1068,13 @@ $.fn.serializeObject = function()
 				if (!this.handleEvents()) {
 					return;
 				}
-				var $sub = null;
 				switch (e.keyCode) {
 					case 27: // reset on Esc
 						var $activeTopItem = this.activatedItems[0];
 						if ($activeTopItem) {
 							this.menuHideAll();
 							$activeTopItem[0].focus();
-							$sub = $activeTopItem.dataSM('sub');
+							var $sub = $activeTopItem.dataSM('sub');
 							if ($sub) {
 								this.menuHide($sub);
 							}
@@ -1114,7 +1083,7 @@ $.fn.serializeObject = function()
 					case 32: // activate item's sub on Space
 						var $target = $(e.target);
 						if ($target.is('a') && this.handleItemEvents($target)) {
-							$sub = $target.dataSM('sub');
+							var $sub = $target.dataSM('sub');
 							if ($sub && !$sub.is(':visible')) {
 								this.itemClick({ currentTarget: e.target });
 								e.preventDefault();
