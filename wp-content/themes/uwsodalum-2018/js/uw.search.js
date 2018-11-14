@@ -13,31 +13,16 @@ UW.Search = Backbone.View.extend({
 
   // This is the HTML for the search bar that is preprended to the body tag.
   searchbar :
-               '<div class="container no-height" role="search">'+
+                '<div class="container no-height" role="search">'+
                   '<div class="center-block uw-search-wrapper">'+
-                    '<form class="uw-search" action="<%= UW.baseUrl %>">'+
-                      '<div class="search-form-wrapper">'+
-                        '<label class="screen-reader" for="uw-search-bar">Enter search text</label>' +
-                        '<input id="uw-search-bar" type="search" name="s" value="" autocomplete="off" placeholder="Search" />'+
-                      '</div>'+
-
-                      '<select id="mobile-search-select" class="visible-xs" aria-label="Search Scope">' +
-   
-                        '<option value="site" selected>Current site</option>' +
-                      '</select>' +
-
-                      '<input type="submit" value="search" class="search" tabindex="0"/>'+
-
-                       
- 
-                         '</form>'+
-                       '</div>'+
- 
-                     '</fieldset>'+
-  
-
-                     
-                '</div>'+
+				 	'<form class="uw-search" action="<%= UW.baseUrl %>">'+
+                    '<div class="search-form-wrapper">'+
+                         '<label class="screen-reader" for="uw-search-bar">Enter search text</label>' +
+                         '<input id="uw-search-bar" type="search" name="s" value="" autocomplete="off" placeholder="Search"/>'+
+                     '</div>'+
+                	'<input type="submit" value="search" class="search" tabindex="0"/>'+
+					'</form>'+
+             	'</div>'+
               '</div>',
 
   // Default values
@@ -47,7 +32,10 @@ UW.Search = Backbone.View.extend({
   // Toggling the radio buttons changes the function of the search bar from searching the UW and searching the current site
   events :
   {
+    'click label.radio' : 'toggleSearchFeature',
+    'change select' : 'toggleSearchFeature',
     'click .search' : 'submitForm',
+    'submit form' : 'submitSearch',
     // Accessibility events
     'keydown' : 'handleKeyDown',
     'focus input' : 'skipToContentIfHidden'
@@ -65,6 +53,7 @@ UW.Search = Backbone.View.extend({
 
     this.toggle.on( 'open', this.toggleBlur, this )
 
+    this.searchFeature = this.$el.find(':radio:checked').val()
   },
 
   // Render the search bar above the `body` element and set the view element to the search bar HTML
@@ -107,10 +96,25 @@ UW.Search = Backbone.View.extend({
     }
   },
 
+  // Set a property to the current radio button indicating which function the search bar is providing.
+  // todo: clean up
+  toggleSearchFeature : function( event )
+  {
+    var value = $( event.currentTarget ).find( 'input' ).val()
+    this.searchFeature = value
+  },
 
   // Skip the search if it is hidden when tabbing through
   skipToContentIfHidden: function() {
     if ( ! this.toggle.settings.isOpen ) $('#main-content').focus()
+  },
+
+  // Determine if the client wants to search current site or the entire UW
+  submitSearch : function( e )
+  {
+	this.$el.find('#uw-search-bar' ).attr( 'name', 'q' )
+	this.$el.find('form').attr('action','https://dental.washington.edu/wp-content/themes/uwsod-2014/search.php/')
+	return true;
   },
 
   submitForm : function()

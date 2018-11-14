@@ -10,9 +10,9 @@ a.screen-reader-shortcut {
         left: 6px;
         top: -99px;
         &:focus {
-            z-index: 5;
+            z-index: 999;
             font-size: 14px;
-            font-weight: 700;
+            font-weight: @bold;
             top: 6px;
             padding: 15px 23px 14px;
             background-color: #f1f1f1;
@@ -47,10 +47,11 @@ label.screen-reader {
     a:focus,
     a:hover {
         color: @darkgold;
-        border-bottom: 1px solid #BDBDBD;
+        //border-bottom: 1px solid #BDBDBD;
         // We don't want buttons underlined on hover
         &.uw-btn {
             border-bottom: none;
+            text-decoration: none;
         }
     }
     a.uw-btn:focus {
@@ -98,6 +99,19 @@ label.screen-reader {
     .form-control {
         color: #303030;
     }
+    // 
+    div.wp-caption > a > img {
+        &:hover {
+                outline: 7px solid #C3C3C3;
+        }
+    }
+
+    div.wp-caption > a {
+        &:focus > img {
+                outline: 7px solid #C3C3C3;
+        }
+    }
+
 }
 
 
@@ -108,10 +122,15 @@ label.screen-reader {
     .uw-body-copy, 
     .uw-sidebar {
         a {
-            border-bottom: 1px solid #DFDFDF;
+            //border-bottom: 1px solid #DFDFDF;
+            text-decoration: underline;
             &:hover {
-                border-bottom: 1px solid @darkgold;
-            }
+               // border-bottom: 1px solid @darkgold;
+               text-decoration: none;
+           }
+           &.uw-btn {
+            text-decoration: none;
         }
+    }
     }
 }

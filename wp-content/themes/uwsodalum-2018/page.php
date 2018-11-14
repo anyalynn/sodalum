@@ -7,16 +7,15 @@
 
   <div class="row">
 
-     <div class="col-md-<?php echo ((!isset($sidebar[0]) || $sidebar[0]!="on") ? "8" : "12" ) ?> uw-content" role='main'>
+    <div class="col-md-<?php echo ((!isset($sidebar[0]) || $sidebar[0]!="on") ? "8" : "12" ) ?> uw-content" role='main'>
 
-       <div class="title-container">
-     </div>
-
-      <?php if (is_front_page()) { get_template_part( 'menu', 'mobile' ); }?>
-
+      
       <?php get_template_part( 'breadcrumbs' ); ?>
 
+
       <div id='main_content' class="uw-body-copy" tabindex="-1">
+
+      
 
         <?php
           // Start the Loop.
@@ -29,6 +28,9 @@
              */
             get_template_part( 'content', 'page' );
 
+
+
+
             // If comments are open or we have at least one comment, load up the comment template.
             if ( comments_open() || get_comments_number() ) {
               comments_template();
@@ -37,15 +39,19 @@
           endwhile;
         ?>
 
+
+
       </div>
 
     </div>
 
-    <div id="sidebar"><?php 
+  
+          <div id="sidebar"><?php 
       if(!isset($sidebar[0]) || $sidebar[0]!="on"){
         get_sidebar();
       }
     ?></div>
+
 
   </div>
 

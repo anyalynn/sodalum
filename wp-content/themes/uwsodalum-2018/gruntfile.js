@@ -14,15 +14,14 @@ module.exports = function(grunt) {
           "js/libraries/imagesloaded.pkgd.js",
           "js/libraries/jetpack.carousel.js",
           "js/libraries/prettify.js",
-
+		 
         ],
 		theme : [
 		  "js/uw.core.js",
           "js/uw.init.js",
           "js/uw.alert.js",
           "js/uw.search.js",
-       "js/uw.searchtoggle.js",
-       "js/uw.dental.js",
+		   "js/uw.searchtoggle.js",
           "js/uw.quicklinks.js",
           "js/uw.slideshow.js",
           "js/uw.youtube.js",
@@ -37,7 +36,7 @@ module.exports = function(grunt) {
           "js/uw.player.js",
           "js/uw.social.js",
 		  "js/uw.custom-link.js"
-
+		
         ],
         components : [
           // todo: put just external components here for the uw.js we will give out

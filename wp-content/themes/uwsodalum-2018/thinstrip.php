@@ -1,17 +1,17 @@
-<header class="uw-thinstrip">
+<header class="uw-thinstrip" role="banner">
 
   <div class="container">
     <a href="http://uw.edu" title="University of Washington Home" class="uw-patch">University of Washington</a>
-    <a href="//sodalum.uw.edu" title="UW SOD Alumni" class="uw-wordmark" tabindex='-1' aria-hidden='true'>UW School of Dentistry Alumni</a>
+    <a href="//dental.washington.edu" title="UW SOD Home" class="uw-wordmark" tabindex='-1' aria-hidden='true'>UW School of Dentistry</a>
   </div>
   <div class='align-right'>
-      <nav class="uw-thin-strip-nav" role='navigation' aria-label='audience based'>
+      <nav class="uw-thin-strip-nav" aria-label='audience based'>
           <ul class="uw-thin-links">
-             <li class="menu-give-now"><a href="http://sodalum.uw.com/drop-us-a-note" title="Drop a Note">Drop a Note</a></li>
-             <li class="menu-myuw-giving"><a href="//dental.washington.edu/alumni-friends/give/make-a-gift/" title="Make a Gift">Make a Gift</a></li>
+             <li class="menu-give-now"><a href="//dental.washington.edu/alumni-friends/give/make-a-gift/" title="Make a Gift">Make a Gift</a></li>
+             <li class="menu-myuw-giving"><a href="//dental.washington.edu/patient/make-an-appointment/" title="Make an Appointment">New Patients</a></li>
           </ul>
       </nav>
-      <nav id='search-quicklinks' role='navigation' aria-label='search and quick links'>
+ <nav id='search-quicklinks' aria-label='search and quick links'>
       <button class='uw-search' aria-owns='uwsearcharea' aria-controls='uwsearcharea' aria-expanded='false' aria-label='open search area' aria-haspopup='true'>
 <!--[if gt IE 8]><!-->
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -30,8 +30,10 @@
           </svg>
 <!--<![endif]-->
       </button>
-   
+      <button class='uw-quicklinks' id='uw-quicklinks' aria-haspopup='true' aria-expanded="false" aria-label="Open quick links" onclick="toggle('quicklinks', 'uw-quicklinks')">Quick Links<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15.63px" height="69.13px" viewBox="0 0 15.63 69.13" enable-background="new 0 0 15.63 69.13" xml:space="preserve" focusable="false"><polygon fill="#FFFFFF" points="12.8,7.776 12.803,7.773 5.424,0 3.766,1.573 9.65,7.776 3.766,13.98 5.424,15.553 12.803,7.78"/><polygon fill="#FFFFFF" points="9.037,61.351 9.036,61.351 14.918,55.15 13.26,53.577 7.459,59.689 1.658,53.577 0,55.15 5.882,61.351 5.882,61.351 5.884,61.353 0,67.557 1.658,69.13 7.459,63.019 13.26,69.13 14.918,67.557 9.034,61.353"/></svg></button>
+       
        </nav>
+     
    </div>
      
 

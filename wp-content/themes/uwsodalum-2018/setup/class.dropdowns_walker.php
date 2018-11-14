@@ -64,7 +64,7 @@ class UW_Dropdowns_Walker_Menu extends Walker_Nav_Menu
 		$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
 		$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
 
-		$attributes .= $item->has_children ? ' class="has-submenu"' : ' class="has-submenu';
+		$attributes .= $item->has_children ? ' class="has-submenu"' : ' class="has-submenu"';
 
 		$attributes .= $depth == 1                ? ' tabindex="-1" '                                : '';
 		$attributes .= ' title="'. $title .'" ';

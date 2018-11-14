@@ -3,23 +3,28 @@
  * Template Name: Home No Title
  */
 ?>
-<?php get_header(); 
-?>
+<?php get_header(); ?>
 
-<?php get_template_part( 'header', 'image' ); ?>
 
-<div class="container uw-body">
+<div class="home uw-body">
 
   <div class="row">
- 
-    <div class="col-md-12 uw-content" role='main'>
-     
 
-      <?php if (is_front_page()) { get_template_part( 'menu', 'mobile' ); }?>
-     
+    <div role='main' class="uw-content" >
+   
+      <div class="uw-hero-image hero-blank no-title">
+  <h1 class="container uw-site-title-blank">Home</h1>
+</div>
+                         
       <div id='main_content' class="uw-body-copy" tabindex="-1">
-
-        <?php
+   <?php  if ( function_exists( 'soliloquy' ) ) { soliloquy( '14466' ); }  ?>    
+         
+         <div class="row">
+			
+<?php get_template_part( 'quicklinks' ); ?>
+            </div>
+      
+            <?php
           // Start the Loop.
           while ( have_posts() ) : the_post();
 
@@ -28,8 +33,7 @@
              * use this in a child theme, then include a file called called content-___.php
              * (where ___ is the post format) and that will be used instead.
              */
-      	  the_content();
- 
+      	 the_content(); 
 
             // If comments are open or we have at least one comment, load up the comment template.
             if ( comments_open() || get_comments_number() ) {
@@ -39,9 +43,12 @@
           endwhile;
         ?>
        </div>
-       </div>
-      <div class="col-md-2"></div>
+        
+             
+
+		
+	    </div>
   </div>
-</div>
+
 
 <?php get_footer(); ?>

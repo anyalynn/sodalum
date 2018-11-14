@@ -221,8 +221,8 @@ $(document).ready(function(){
            
 
            // Add an option to open Accordion tab with a URL hash
-           //var urlcheck = '#' + window.location.hash.substr(1).toString();
-           //urlcheck.length > 2 ? $(urlcheck).click() : null;
+           var urlcheck = '#' + window.location.hash.substr(1).toString();
+           urlcheck.length > 2 ? $(urlcheck).click() : null;
 
         
         }

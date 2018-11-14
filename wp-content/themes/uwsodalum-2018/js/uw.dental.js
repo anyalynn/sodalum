@@ -1,3 +1,131 @@
+//For quicklinks button
+function toggle(id, id2) {
+    var n = document.getElementById(id);
+	if (n.getAttribute('aria-hidden')=="false") 
+	  {
+	  n.setAttribute('aria-hidden',"true");
+      n.setAttribute('class',"");
+      document.getElementById(id2).setAttribute('aria-expanded', 'false');
+	  document.getElementById("uw-container").setAttribute("class","");
+  }
+  else
+  {
+  n.setAttribute('aria-hidden',"false");
+n.setAttribute('class',"open");
+  document.getElementById(id2).setAttribute('aria-expanded', 'true');
+document.getElementById("uw-container").setAttribute("class","open");
+	  }
+  }
+  
+function getRadioBtnValue(name){
+	var btns = document.getElementsByName(name);
+		var btn_value;
+	for(var i = 0; i < btns.length; i++){
+    	if(btns[i].checked){
+        	btn_value = btns[i].value;
+		}
+	}
+	return btn_value
+}
+   
+
+$.fn.serializeObject = function()
+{
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+};
+   
+function formVal()
+{
+	memTypeLabel.style.border = '';
+	userAlumMemName.style.border = '';
+	userEmail.style.border = '';
+	userGradYr.style.border = '';
+	recurLabel.style.border = '';
+	var memType = getRadioBtnValue("MemType");
+	$("#userMemType").val(memType);
+	if ((memType)== "New Member"){
+			$("#ItemCost1").val("50.00");}
+	else{
+			$("#ItemCost1").val("120.00");
+	}
+	var recur =getRadioBtnValue("userAnnualRecur");
+	if(recur == "Yes"){
+		$("#ItemQty2").val("1");
+	}else{
+		$("#ItemQty2").val("0");
+	}
+	
+	
+
+	$("#ItemDesc1").val($("#userMemType").val() + "-" + $("#userAlumMemName").val() + "-" + $("#userGradYr").val());
+	$("#BillEmail").val($("#userEmail").val());
+	var bool=true;
+	if(document.getElementById("userMemType").value === "")
+		{
+			inval.style.display = 'block';
+			memTypeLabel.style.border = '2px solid red';
+			bool =  false;
+		}
+	if(document.getElementById("userAlumMemName").value === "")
+		{
+			inval.style.display = 'block';
+			userAlumMemName.style.border = '2px solid red';
+			bool =  false;
+		}
+	if(document.getElementById("userEmail").value === "")
+		{
+			inval.style.display = 'block';
+			userEmail.style.border = '2px solid red';
+			bool =  false;
+		}
+	if(document.getElementById("userGradYr").value === "")
+		{
+			inval.style.display = 'block';
+			userGradYr.style.border = '2px solid red';
+			bool =  false;
+		}
+	if(document.getElementById("ItemQty2").value === "")
+		{
+			inval.style.display = 'block';
+			recurLabel.style.border = '2px solid red';
+			bool =  false;
+		}
+		
+		$.ajax({
+                    type: 'POST',
+					url: 'https://dental.washington.edu/wp-content/converge/alumni.php',
+					data: $('#alum-renew').serializeObject(),
+					dataType: "json",
+					async:false,
+                    success: function(res) {
+                        if (res.status != 'successful') {
+                            bool = false;
+							inval.style.display = 'block';
+							inval_r.style.display="block";
+                        } else{
+						}
+						
+                    },error: function(){
+					}
+					
+                });
+		return bool;
+	
+}
+
+
 /*
  * SmartMenus jQuery v1.0.0
  * http://www.smartmenus.org/
@@ -356,7 +484,6 @@
 					}
 					this.disabled = false;
 				}
-
 
 
 
