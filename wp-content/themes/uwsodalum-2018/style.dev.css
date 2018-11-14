@@ -1,5 +1,5 @@
 /*!
-Theme Name: UW 2014
+Theme Name: UW SODALUM 2018
 Theme URI: washington.edu
 Description: The 2014 theme
 Author: UW Web Team
@@ -4299,9 +4299,6 @@ a.more:after {
     border-right: 0;
     float: left;
     text-decoration: none;
-  }
-  .uw-thinstrip ul.uw-thin-links li:last-child a:after {
-    display: block !important;
   }
   .uw-links ul li a span {
     padding-top: 6px;
