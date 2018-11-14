@@ -5151,9 +5151,7 @@ body.page-template-big-hero .uw-hero-image {
   float: left;
   list-style: none;
 }
-.uw-thinstrip ul.uw-thin-links li:last-child a:after {
-  display: none;
-}
+
 .uw-thinstrip ul.uw-thin-links li a,
 .uw-thinstrip ul.uw-thin-links li button {
   font-family: "Encode Sans Compressed", sans-serif;

@@ -4300,13 +4300,16 @@ a.more:after {
     float: left;
     text-decoration: none;
   }
+  .uw-thinstrip ul.uw-thin-links li:last-child a:after {
+    display: block !important;
+  }
   .uw-links ul li a span {
     padding-top: 6px;
   }
   .info-box {
     width: 100%;
     float: none;
-    margin: right:0;
+    margin-right: 0;
     padding: 25px;
   }
   #soliloquy-container-14466 .soliloquy-caption.soliloquy-caption-left {
@@ -7798,6 +7801,9 @@ a.uw-custom-link:hover {
 .uw-thinstrip ul.uw-thin-links li {
   float: left;
   list-style: none;
+}
+.uw-thinstrip ul.uw-thin-links li:last-child a:after {
+  display: none;
 }
 .uw-thinstrip ul.uw-thin-links li a,
 .uw-thinstrip ul.uw-thin-links li button {
