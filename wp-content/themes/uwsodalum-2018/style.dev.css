@@ -4386,6 +4386,9 @@ a.more:after {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
 }
+.uw-thinstrip .uw-wordmark:hover {
+  background-image: url(assets/svg/uw-sprite-focus.svg) !important;
+}
 @media screen and (min-width: 768px) {
   h1.no-title {
     display: none;
