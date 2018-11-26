@@ -10,7 +10,8 @@
              <li class="menu-give-now"><a href="//dental.washington.edu/alumni-friends/give/make-a-gift/" title="Make a Gift">Make a Gift</a></li>
              <li class="menu-myuw-giving"><a href="//sodalum.uw.edu/drop-us-a-note/" title="Make an Appointment">Drop Us a Note</a></li>
           </ul>
-          <nav id='search-quicklinks' aria-label='search and quick links'>
+</nav>
+<nav id='search-quicklinks' aria-label='search and quick links'>
       <button class='uw-search' aria-owns='uwsearcharea' aria-controls='uwsearcharea' aria-expanded='false' aria-label='open search area' aria-haspopup='true'>
 <!--[if gt IE 8]><!-->
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -33,6 +34,7 @@
       
       
        </nav>
+         
    </div>
      
 
