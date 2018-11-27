@@ -29,7 +29,6 @@ section,
 summary {
   display: block;
 }
-
 audio,
 canvas,
 progress,
@@ -3570,9 +3569,6 @@ td.visible-print {
 .container.uw-body {
   margin-top: 10px;
 }
-.home #main_content h1 {
-  text-align: center;
-}
 #mobile-search-select {
   display: none !important;
 }
@@ -3645,9 +3641,6 @@ td.visible-print {
 }
 .class-title {
   text-align: center;
-}
-.menu-myuw-giving {
-  margin-right: 20px;
 }
 @media only screen and (max-width: 768px) {
   .featured-post.four-column {
@@ -5709,7 +5702,7 @@ table.services a {
     transform: skew(-15deg, 0);
   }
   .menu-myuw-giving a:before {
-    width: 149px;
+    width: 160px;
     height: 45px;
     left: -6px;
     top: -1px;
