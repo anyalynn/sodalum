@@ -8,12 +8,13 @@
    
   
         <div class="col-md-8 uw-content" role='main'>
-          <?php get_template_part( 'breadcrumbs' ); ?>
+        <?php uw_site_title(); ?>
+        <?php get_template_part( 'breadcrumbs' ); ?>
 
         <div id='main_content' class="uw-body-copy" tabindex="-1">
            
-            <h1>Not what you were expecting?</h1>
-              <p>Please try one of the following links:</p>
+            <h3>Not what you were expecting?</h3>
+              
                 <ul>
                    <li><a href="//dental.washington.edu">UW School of Dentistry home page</a></li>
                    <li><a href="//dental.washington.edu/patient/">Patient Care</a></li>

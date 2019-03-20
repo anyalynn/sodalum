@@ -1,15 +1,27 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Anya's Title
+ */
+?>
+
+<?php get_header(); 
+   $sidebar = get_post_meta($post->ID, "sidebar"); ?>
 
 <?php get_template_part( 'header', 'image' ); ?>
+
 <div class="container uw-body">
 
   <div class="row">
 
-    <div class="col-md-8 uw-content" role='main'>
+    <div class="col-md-<?php echo ((!isset($sidebar[0]) || $sidebar[0]!="on") ? "8" : "12" ) ?> uw-content" role='main'>
 
-      <?php uw_site_title(); ?>
+      
+        <nav class="uw-breadcrumbs" aria-label="breadcrumbs">&nbsp; </nav>   
 
-      <div class="uw-body-copy">
+
+      <div id='main_content' class="uw-body-copy" tabindex="-1">
+
+      
 
         <?php
           // Start the Loop.
@@ -20,7 +32,10 @@
              * use this in a child theme, then include a file called called content-___.php
              * (where ___ is the post format) and that will be used instead.
              */
-            get_template_part( 'content', 'pdf' );
+            get_template_part( 'content', 'page' );
+
+
+
 
             // If comments are open or we have at least one comment, load up the comment template.
             if ( comments_open() || get_comments_number() ) {
@@ -30,12 +45,26 @@
           endwhile;
         ?>
 
+
+
       </div>
 
     </div>
 
+  
+          <div id="sidebar"><?php 
+      if(!isset($sidebar[0]) || $sidebar[0]!="on"){
+        get_sidebar();
+      }
+    ?></div>
+
+
   </div>
 
 </div>
-
+ <div style="height:50px">&nbsp;</div>
+      <div class="row">
+			
+<?php get_template_part( 'quicklinks' ); ?>
+       </div>
 <?php get_footer(); ?>

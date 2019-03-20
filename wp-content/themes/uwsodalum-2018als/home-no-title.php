@@ -1,30 +1,29 @@
 <?php
 /**
- * Template Name: Home No Title
+ * Template Name: Home Title
  */
 ?>
-<?php get_header(); ?>
 
+<?php get_header(); 
+   $sidebar = get_post_meta($post->ID, "sidebar"); ?>
 
-<div class="home uw-body">
+<?php get_template_part( 'header', 'image' ); ?>
+
+<div class="container uw-body">
 
   <div class="row">
 
-    <div role='main' class="uw-content" >
-   
-      <div class="uw-hero-image hero-blank no-title">
-  <h1 class="container uw-site-title-blank">Home</h1>
-</div>
-                         
-      <div id='main_content' class="uw-body-copy" tabindex="-1">
-   <?php  if ( function_exists( 'soliloquy' ) ) { soliloquy( '14466' ); }  ?>    
-         
-         <div class="row">
-			
-<?php get_template_part( 'quicklinks' ); ?>
-            </div>
+    <div class="col-md-<?php echo ((!isset($sidebar[0]) || $sidebar[0]!="on") ? "8" : "12" ) ?> uw-content" role='main'>
+
       
-            <?php
+        <nav class="uw-breadcrumbs" aria-label="breadcrumbs">&nbsp; </nav>   
+
+
+      <div id='main_content' class="uw-body-copy" tabindex="-1">
+
+      
+
+        <?php
           // Start the Loop.
           while ( have_posts() ) : the_post();
 
@@ -33,7 +32,10 @@
              * use this in a child theme, then include a file called called content-___.php
              * (where ___ is the post format) and that will be used instead.
              */
-      	 the_content(); 
+            get_template_part( 'content', 'page' );
+
+
+
 
             // If comments are open or we have at least one comment, load up the comment template.
             if ( comments_open() || get_comments_number() ) {
@@ -42,13 +44,27 @@
 
           endwhile;
         ?>
-       </div>
-        
-             
 
-		
-	    </div>
+
+
+      </div>
+
+    </div>
+
+  
+          <div id="sidebar"><?php 
+      if(!isset($sidebar[0]) || $sidebar[0]!="on"){
+        get_sidebar();
+      }
+    ?></div>
+
+
   </div>
 
-
+</div>
+ <div style="height:50px">&nbsp;</div>
+      <div class="row">
+			
+<?php get_template_part( 'quicklinks' ); ?>
+       </div>
 <?php get_footer(); ?>
