@@ -11245,11 +11245,11 @@ table.services a {
 .page-id-37 .uw-hero-image {
   background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/Sunny-March-Campus.jpg") center !important;
   opacity: 0.7;
-  -webkit-background-size: cover;
+/*  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;
+  position: relative;*/
 }
 @media only screen and (min-width: 767px) {
   .uw-body-copy h1,
