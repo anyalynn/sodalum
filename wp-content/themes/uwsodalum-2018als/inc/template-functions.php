@@ -208,7 +208,7 @@ if ( ! function_exists('get_uw_breadcrumbs') ) :
 
     global $post;
     $ancestors = array_reverse( get_post_ancestors( $post->ID ) );
-    $html = '<li><a href="//dental.washington.edu" title="UW School of Dentistry">Home</a></li>';
+    $html = '<li><a href="//sodalum.uw.edu" title="UW School of Dentistry">Home</a></li>';
    
 
     if ( is_404() )

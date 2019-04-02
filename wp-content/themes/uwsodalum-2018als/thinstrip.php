@@ -2,13 +2,13 @@
 
   <div class="container">
     <a href="http://uw.edu" title="University of Washington Home" class="uw-patch">University of Washington</a>
-    <a href="http://sodalumdev.wpengine.com" title="UW SOD Class Connections" class="uw-wordmark" tabindex='-1' aria-hidden='true'>UW SOD Class Connections</a>
+    <a href="https://sodalum.uw.edu" title="UW SOD Class Connections" class="uw-wordmark" tabindex='-1' aria-hidden='true'>UW SOD Class Connections</a>
   </div>
   <div class='align-right'>
       <nav class="uw-thin-strip-nav" aria-label='audience based'>
           <ul class="uw-thin-links">
              <li class="menu-give-now"><a href="//dental.washington.edu/alumni-friends/give/make-a-gift/" title="Make a Gift">Make a Gift</a></li>
-             <li class="menu-myuw-giving"><a href="http://sodalumdev.wpengine.com/class-connections/drop-us-a-note/" title="Drop us a note">Drop us a Note</a></li>
+             <li class="menu-myuw-giving"><a href="http://sodalum.uw.edu/class-connections/drop-us-a-note/" title="Drop us a note">Drop us a Note</a></li>
           </ul>
       </nav>
  <nav id='search-quicklinks' aria-label='search and quick links'>

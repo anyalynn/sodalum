@@ -1,6 +1,6 @@
     <div role="contentinfo" class="uw-footer">
 
-        <a href="//dental.washington.edu" class="footer-wordmark">UW School of Dentistry</a>
+        <a href="//sodalum.uw.edu" class="footer-wordmark">UW SOD Class Connections</a>
 
         <a href="http://www.washington.edu/boundless/"><h3 class="be-boundless">Be boundless</h3></a>
 
@@ -16,7 +16,7 @@
         <nav aria-label="footer links">
             <ul class="footer-links">
                <li><a href="http://www.uw.edu/accessibility">Accessibility</a></li>
-                <li><a href="//dental.washington.edu/about-us/contact-us/">Contact Us</a></li>
+                <li><a href="https://sodalum.uw.edu/contact-us/">Contact</a></li>
                   <li><a href="http://www.washington.edu/safety">Campus Safety</a></li>             
                 <li><a href="http://www.washington.edu/rules/wac/">Rules Docket</a></li>
                 <li><a href="https://dental.washington.edu/privacy/">Privacy</a></li>
