@@ -5640,7 +5640,7 @@ a.uw-custom-link:hover {
     position: absolute;
     top: 0;
   }
-  .uw-hero-image.hero-height {
+  .uw-hero-image.hero-height,  .uw-hero-image.hero-height2  {
     padding: 50px 20px 20px;
     display: block;
     height: auto;
@@ -5656,11 +5656,11 @@ a.uw-custom-link:hover {
     top: -60px;
     left: -270px;
   }
-  .uw-hero-image.hero-height2 {
+ /* .uw-hero-image.hero-height2 {
     padding: 5px;
     display: block;
     height: auto;
-  }
+  }*/
   .uw-hero-image.hero-height2 .container #hashtag {
     font-size: 16px;
   }
