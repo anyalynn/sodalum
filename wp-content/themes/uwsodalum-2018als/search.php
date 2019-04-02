@@ -3,7 +3,7 @@
 
 <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Class Connections - Class ConnectionsClass Connections </title>
+        <title> Class Connections - Search </title>
         <meta charset="utf-8">
  
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -414,7 +414,7 @@ padding-left: 0px !important;
             <ul class="footer-social">
                 <li><a class="facebook" href="https://www.facebook.com/pages/The-University-of-Washington-School-of-Dentistry/160752227303910">Facebook</a></li>
              
-                <li><a class="google" href="https://plus.google.com/b/108816227097181482651/108816227097181482651/about?cfem=1">Google+</a></li>
+               
             </ul>
         </nav>
 
@@ -429,7 +429,7 @@ padding-left: 0px !important;
             </ul>
         </nav>
 
-        <p>&copy; 2018 UW School of Dentistry  |  Seattle, WA</p>
+        <p>&copy; 2019 UW School of Dentistry  |  Seattle, WA</p>
 
     </div>
         </div>
