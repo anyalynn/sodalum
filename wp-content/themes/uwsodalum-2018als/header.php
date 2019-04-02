@@ -30,7 +30,7 @@
 
     <div id="uwsearcharea" aria-hidden="true" class="uw-search-bar-container"></div>
     
-    
+    <div id="uw-container">
     <div id="uw-container-inner">
 
 
