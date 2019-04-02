@@ -5607,6 +5607,7 @@ a.uw-custom-link:hover {
   .uw-hero-image.hero-mobile-image.hero-height,
   .uw-hero-image.hero-mobile-image.hero-height2 {
     height: 480px;
+	display:none;
   }
   .uw-hero-image.hero-mobile-image.hero-height .mobile-image,
   .uw-hero-image.hero-mobile-image.hero-height2 .mobile-image {
