@@ -1,9 +1,9 @@
 /*!
-Theme Name: UWSOD 2018
+Theme Name: UWSODALUM 2018 (als)
 Theme URI: uwsod.staging.wpengine.com
-Description: The 2014 UW theme modifed for SOD
+Description: The 2014 UW theme modifed for SODALUM
 Author: UW Web Team + Anya LevySmith
-Author URI: http://uwsod.staging.wpengine.com/
+Author URI: http://sodalum.staging.wpengine.com/
 Version: 0.2
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -4936,12 +4936,12 @@ a.uw-custom-link:hover {
 .uw-thinstrip .uw-wordmark {
   display: block;
   position: absolute;
-  top: 0px;
+  top: 12px;
   left: 150px;
   text-indent: -9999px;
   width: 330px;
   height: 24px;
-  background: url(assets/svg/uw-sprite.svg) no-repeat 0 -400px transparent;
+  background: url(assets/svg/uw-sprite.svg) no-repeat 0 -431px transparent;
 }
 .uw-thinstrip div.align-right {
   float: right;
@@ -5489,7 +5489,7 @@ a.uw-custom-link:hover {
 }
 .uw-hero-image,
 .no-uw-hero-image {
-  height: 250px;
+  height: 170px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5519,7 +5519,7 @@ a.uw-custom-link:hover {
 }
 .uw-hero-image.hero-height,
 .no-uw-hero-image.hero-height {
-  height: 250px;
+  height: 350px;
 }
 .uw-hero-image.hero-height #hero-container,
 .no-uw-hero-image.hero-height #hero-container {
@@ -5566,9 +5566,9 @@ a.uw-custom-link:hover {
 .no-uw-hero-image:after {
   opacity: .2;
 }
-/*.no-uw-hero-image:before {
+.no-uw-hero-image:before {
   display: none;
-}*/
+}
 .udub-slant {
   overflow: hidden;
   display: block;
@@ -5626,7 +5626,7 @@ a.uw-custom-link:hover {
   .uw-hero-image.hero-mobile-image.hero-height2 #hero-bg #hero-container h1.uw-site-title,
   .uw-hero-image.hero-mobile-image.hero-height div.container h1.uw-site-title2,
   .uw-hero-image.hero-mobile-image.hero-height2 div.container h1.uw-site-title2 {
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .uw-hero-image.hero-mobile-image.hero-height #hero-bg #hero-container h1.uw-site-title:after,
   .uw-hero-image.hero-mobile-image.hero-height2 #hero-bg #hero-container h1.uw-site-title:after,
@@ -5645,7 +5645,7 @@ a.uw-custom-link:hover {
     height: auto;
   }
   .uw-hero-image.hero-height #hero-container h1 {
-    font-size: 25px;
+    font-size: 35px;
     padding: 0;
   }
   .uw-hero-image.hero-height #hero-container h1:after {
@@ -5670,7 +5670,7 @@ a.uw-custom-link:hover {
     min-height: auto;
   }
   .uw-hero-image.hero-height2 h1 {
-    font-size: 25px;
+    font-size: 35px;
     padding: 0;
   }
   .uw-hero-image.hero-height2 h1:after {
@@ -6088,7 +6088,7 @@ img.attachment-post-thumbnail.wp-post-image.blogroll-img,
   }
   .uw-body h1 {
     margin: 10px 80px 20px 0;
-    font-size: 25px;
+    font-size: 33px;
   }
   .uw-body p.date {
     margin-bottom: -15px;
@@ -8397,12 +8397,12 @@ textarea#jp-carousel-comment-form-comment-field:focus::-webkit-input-placeholder
   display: none;
 }
 a.uw-btn {
-  padding: 20px 20px 25px 20px;
-  text-transform: none;
-  background-color: #ECE9E2;
-  font-family: "Open Sans", serif;
+  padding: 11px 20px;
+  text-transform: uppercase;
+  background-color: #e8e3d3;
+  font-family: "Encode Sans Compressed", sans-serif;
   font-weight: 800;
-  color: #85754d;
+  color: #5a5a5a;
   display: inline-block;
   position: relative;
   background-image: none !important;
@@ -8412,13 +8412,9 @@ a.uw-btn {
   margin-right: 50px;
   z-index: 1;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none !important;
-  height:60px;
-  min-width:310px;
-  max-width:325px;
 }
-
 a.uw-btn.btn-sm {
   padding: 8px 14px;
   font-size: 14px;
@@ -8831,7 +8827,7 @@ label.screen-reader {
   font-family: "Encode Sans Compressed", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 75px;
   color: #fff;
 }
 #hero-container p {
@@ -8885,10 +8881,10 @@ label.screen-reader {
   color: #4b2e83;
 }
 .no-title h1.uw-site-title-blank {
- /* display: none;*/
+  display: none;
 }
 .hero-content {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .hero-content .uw-site-title {
   display: none;
@@ -8943,13 +8939,12 @@ label.screen-reader {
   text-transform: uppercase;
   color: #FFF !important;
   font-weight: 900;
-  font-size: 50px;
-  margin: 50px 0 0 0;
+  font-size: 60px;
+  margin: 0;
   line-height: 1;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   display: inline-block;
   vertical-align: bottom;
-  opacity:1;
 }
 .hero-height2 h1:after {
   content: "";
@@ -9761,19 +9756,21 @@ display:inline-block;
   .uw-thinstrip .uw-wordmark {
     width: 155px;
     height: 34px;
-    background: url(assets/svg/uw-sprite.svg) no-repeat 0 -230px transparent;
+    background: url(assets/svg/uw-sprite.svg) no-repeat 0 -226px transparent;
     margin: 0;
     float: none;
     position: absolute;
     left: 78px;
-    top: 4px;
+    top: 0px;
     background-size: 497px;
   }
-  .uw-footer .footer-wordmark {
+  .uw-footer .footer-wordmark,
+  .uw-footer .footer-wordmark:hover {
     background-size: 620px;
+    margin-left: 60px;
   }
   h1.no-title {
-  /*  text-indent: -9999px;*/
+    text-indent: -9999px;
     background: #fff;
   }
   .on-campus {
@@ -9803,11 +9800,12 @@ display:inline-block;
 }
 @media screen and (min-width: 768px) {
   h1.no-title {
-   /* display: none;*/
+    display: none;
   }
   .uw-thinstrip .uw-wordmark {
     background: url(assets/svg/uw-sprite.svg) no-repeat 0 -400px transparent;
     height: 50px;
+    margin-top: -10px;
   }
   .uw-links ul li a {
     width: 25%;
@@ -9847,7 +9845,7 @@ display:inline-block;
 }
 .uw-footer .footer-wordmark:focus,
 .uw-footer .footer-wordmark:hover {
-  background: url(assets/svg/uw-sprite-focus.svg) no-repeat 0 -411px transparent;
+  background: url(assets/svg/uw-sprite-focus.svg) no-repeat 0 -400px transparent;
 }
 .uw-links {
   position: relative;
@@ -9869,10 +9867,10 @@ display:inline-block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  text-transform:none;
+  text-transform: uppercase;
   transition: all 0.1s ease-in-out;
-  line-height: 1.7;
-  font-size:20px;
+  line-height: 1.3;
+  font-size: 20px;
 }
 .uw-links ul li a:hover svg,
 .uw-links ul li a:focus svg {
@@ -9882,15 +9880,14 @@ display:inline-block;
 }
 .uw-links ul li a:hover svg path,
 .uw-links ul li a:focus svg path {
-  fill: #85754d;
+  fill: #4b2e83;
 }
 .uw-links ul li a span {
   display: block;
   margin-top: 10px;
 }
-.uw-links ul li a:focus, .uw-links ul li a:hover {
+.uw-links ul li a:focus {
   text-decoration: none;
-  color:#85754d;
 }
 .uw-links ul li:last-child a {
   border: none;
@@ -11166,6 +11163,343 @@ table.services a {
     margin: 10px;
   }
 }
+.uw-hero-image {
+  opacity: 0.5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+/* 1950s */
+.page-id-263 .uw-hero-image,
+.parent-pageid-263 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/campus-spring-buildings.jpg") center !important;
+  opacity: 0.5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+/* 1960s */
+.page-id-265 .uw-hero-image,
+.parent-pageid-265 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/campus-spring-fountain.jpg") center !important;
+  opacity: 0.5;
+}
+/* 1970s */
+.page-id-267 .uw-hero-image,
+.parent-pageid-267 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWbiker.jpg") center !important;
+  opacity: 0.5;
+}
+/* 1980s */
+.page-id-269 .uw-hero-image,
+.parent-pageid-269 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/CherryStudentsUmbrella.jpg") center !important;
+  opacity: 0.5;
+}
+/* 1990s */
+.page-id-272 .uw-hero-image,
+.parent-pageid-272 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWStudentsSunny.jpg") center !important;
+  opacity: 0.5;
+}
+/* 2000s */
+.page-id-275 .uw-hero-image,
+.parent-pageid-275 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWStudentsSnow2.jpg") center !important;
+  opacity: 0.5;
+}
+/* 2010s */
+.page-id-370 .uw-hero-image,
+.parent-pageid-370 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWCampus-625.jpg") center !important;
+  opacity: 0.5;
+}
+/* index */
+.page-id-85 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWBuildingTrees.jpg") center !important;
+  opacity: 0.5;
+}
+/* history project */
+.page-id-62 .uw-hero-image,
+.parent-pageid-62 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWDecemberSunset.jpg") center !important;
+  opacity: 0.5;
+}
+/* contact */
+.page-id-110 .uw-hero-image,
+.parent-pageid-110 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWFootballflag.jpg") center !important;
+  opacity: 0.5;
+}
+/* contact */
+.page-id-107 .uw-hero-image,
+.parent-pageid-107 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWFootballflag.jpg") center !important;
+  opacity: 0.5;
+}
+.page-id-37 .uw-hero-image {
+  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/Sunny-March-Campus.jpg") center !important;
+  opacity: 0.7;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (min-width: 767px) {
+  .uw-body-copy h1,
+  .uw-body h1,
+  .home .uw-body-copy h1 {
+    top: -110px;
+    position: absolute;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4b2e78;
+    margin-bottom: 240px;
+    display: block;
+    visibility: visible;
+  }
+  #hero-bg {
+    position: relative;
+    padding: 90px 0;
+  }
+  #hero-bg div.orig,
+  #hero-bg div.blrd {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  #hero-container {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 50px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-container h1 {
+    font-family: "Encode Sans Compressed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+  }
+  #hero-container p {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1em;
+    line-height: 23px;
+    margin: 0 0 30px;
+    width: 70%;
+  }
+  #hero-container #hashtag {
+    position: absolute;
+    font-family: "Encode Sans Compressed", sans-serif;
+    font-weight: 900;
+    color: #4B2E83;
+    font-size: 21px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #hero-container #hashtag span {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: skew(-15deg, 0);
+    -ms-transform: skewX(-15deg) skewY(0);
+    transform: skew(-15deg, 0);
+    padding: 2px 25px 3px 28px;
+    display: block;
+    margin: 0 10px 0 -10px;
+  }
+  #hero-container #hashtag span span {
+    transform: skew(15deg, 0);
+    display: block;
+    background-color: transparent;
+  }
+  #hero-container #hashtag span span big {
+    font-size: xx-large;
+  }
+  #hero-container #hashtag span span small {
+    font-family: 'Uni Sans', sans-serif;
+    font-weight: 300;
+  }
+  #hero-container a.uw-btn {
+    background-color: #fff;
+    color: #4B2E83;
+  }
+  #hero-container a.uw-btn:before {
+    background-color: #b7a57a;
+  }
+  .uw-site-title-blank {
+    font-size: 50px;
+    padding-top: 20px;
+    color: #4b2e83;
+  }
+  .no-title h1.uw-site-title-blank {
+    /* display: none;*/
+  }
+  .hero-content {
+    margin-top: 40px;
+  }
+  .hero-content .uw-site-title {
+    display: none;
+  }
+  .hero-height2 {
+    height: 245px;
+  }
+  .hero-height2 .container #hashtag.mask {
+    position: inherit;
+    visibility: hidden;
+    min-height: 70px;
+  }
+  .hero-height2 .container #hashtag {
+    position: absolute;
+    top: 0px;
+    font-family: "Encode Sans Compressed", sans-serif;
+    font-weight: 900;
+    color: #4B2E83;
+    font-size: 21px;
+    overflow: hidden;
+  }
+  .hero-height2 .container #hashtag span {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: skew(-15deg, 0);
+    -ms-transform: skewX(-15deg) skewY(0);
+    transform: skew(-15deg, 0);
+    padding: 2px 25px 3px 28px;
+    display: block;
+    margin: 0 10px 0 -10px;
+  }
+  .hero-height2 .container #hashtag span span {
+    transform: skew(15deg, 0);
+    display: block;
+    background-color: transparent;
+  }
+  .hero-height2 .container #hashtag span span big {
+    font-size: xx-large;
+  }
+  .hero-height2 .container #hashtag span span small {
+    font-family: 'Uni Sans', sans-serif;
+    font-weight: 300;
+  }
+  .hero-height2 .container a.uw-btn {
+    background-color: #fff;
+    color: #4B2E83;
+  }
+  .hero-height2 .container a.uw-btn:before {
+    background-color: #b7a57a;
+  }
+  .hero-height2 h1 {
+    font-family: "Encode Sans Compressed", sans-serif;
+    text-transform: uppercase;
+    color: #FFF !important;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 50px 0 0 0;
+    line-height: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    vertical-align: bottom;
+    opacity: 1;
+  }
+  .hero-height2 h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 360px;
+    left: -140px;
+    opacity: .3;
+    width: 600px;
+    background: url(assets/svg/slashes-light.svg) no-repeat 0 0;
+    z-index: 0;
+  }
+  .hero-height2:before {
+    display: none;
+  }
+  .hero-height2:after {
+    display: none;
+  }
+  .hero-height2 .udub-slant span {
+    background-color: #b7a57a;
+  }
+  .hero-blank {
+    height: auto;
+    background-color: transparent;
+  }
+  .hero-blank:before,
+  .hero-blank:after {
+    display: none;
+  }
+  .uw-footer .footer-wordmark {
+    display: inline-block;
+    width: 335px;
+    background: url(assets/svg/uw-sprite.svg) no-repeat 0 -400px transparent;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .uw-footer .footer-wordmark:focus,
+  .uw-footer .footer-wordmark:hover {
+    background: url(assets/svg/uw-sprite-focus.svg) no-repeat 0 -400px transparent;
+  }
+}
+@media only screen and (min-width: 767px) and only screen and (max-width: 767px) {
+  .hero-content .uw-site-title {
+    display: block;
+  }
+  #hero-container #hashtag {
+    margin-top: -50px;
+    font-size: 18px;
+  }
+  #hero-container #hashtag span {
+    padding: 2px 5px 3px 18px;
+  }
+  #hero-container #hashtag span span big {
+    font-size: 18px;
+  }
+  div.uw-hero-image.hero-height2 div.container #hashtag {
+    font-size: 18px;
+  }
+  div.uw-hero-image.hero-height2 div.container #hashtag span span big {
+    font-size: 18px;
+  }
+  div.uw-hero-image.hero-height2 div.container #hashtag.mask {
+    position: relative;
+  }
+}
+a.uw-btn {
+  padding: 20px 20px 25px 20px;
+  text-transform: none;
+  background-color: #ECE9E2;
+  font-family: "Open Sans", serif;
+  font-weight: 800;
+  color: #85754d;
+  display: inline-block;
+  position: relative;
+  background-image: none !important;
+  border-bottom: none;
+  text-decoration: none;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  z-index: 1;
+  line-height: 24px;
+  font-size: 18px;
+  text-decoration: none !important;
+  height: 60px;
+  min-width: 310px;
+  max-width: 325px;
+}
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -11950,320 +12284,3 @@ pre.prettyprint ol.linenums li {
     border: 1px solid #ddd !important;
   }
 }
-/*@media only screen and (max-width: 768px) {
-  .ccchildpages_list li {
-    width: 46% !important;
-    float: left;
-    margin-right: 1%;
-    margin-bottom: 1%;
-  }
-}*/
-.ccchildpages ul {
- /* padding: 0 0 !important;*/
- list-style:none;
-}
-.ccchildpages_list li:hover:before, .ccchildpages_list li:focus:before, .ccchildpages_list li:hover, .ccchildpages_list li:focus {
- /* transition: .1s ease;
-  -webkit-box-shadow: 13px 14px 43px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 13px 14px 43px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 13px 14px 43px 0px rgba(0, 0, 0, 0.5);
-  color: #fff !important;
-  background-color: #4b2e83;
-  border: 10px #4b2e83 solid;*/
-  color:#4b2e83;
-}
-.ccchildpages_list a:hover, .ccchildpages_list a:focus {
- /* transition: .5s ease;
-  background: #4b2e83;
-  background-size: contain;
-  background-position-y: center;
-  color: #ffffff !important; */
-   color:#4b2e83 !important;
-}
-.ccchildpages_list li {
-  width: 50%;
-  float: left;
- 
-}
-
-.ccchildpages_list li:before {
-	list-style:none;
-	font-family: 'uw-icon';
-	content: "\e90e  ";
-	font-size:40px;
-	text-decoration:none;
-	color:#85754d;
-	vertical-align:bottom;
-	line-height:0.9;
-	
-}
-.ccchildpages_list a {
-/*  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 30px;
-  height: 70px;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #ffffff !important;
-  padding-left: 5%;
-  padding-right: 5%;
-  background: #85754d;
-  background-size: contain;
-  background-position-y: center;
-  */
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #85754d !important;
-   vertical-align:central;
-   line-height:1.4;
-}
-/*
-.ccchildpages_list a:link,
-.ccchildpages_list a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-*/
-
-.class-title {
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .featured-post.four-column {
-    width: 50%;
-  }
- /* .ccchildpages_list a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 30px;
-  }*/
-}
-/*@media only screen and (max-width: 995px) {
-  .featured-post.four-column {
-    width: 30%;
-  }
-  .ccchildpages_list a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 30px;
-  }
-}
-*/
-.uw-hero-image {
-	opacity: 0.5;
-	 -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-
-/* 1950s */
-.page-id-263 .uw-hero-image, .parent-pageid-263 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/campus-spring-buildings.jpg") center !important;
-  opacity: 0.5;
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-
-/* 1960s */
-.page-id-265 .uw-hero-image, .parent-pageid-265 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/campus-spring-fountain.jpg") center !important;
-  opacity: 0.5;
-  
-}
-
-/* 1970s */
-.page-id-267 .uw-hero-image, .parent-pageid-267 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWbiker.jpg") center !important;
-  opacity: 0.5;
-}
-
-/* 1980s */
-.page-id-269 .uw-hero-image, .parent-pageid-269 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/CherryStudentsUmbrella.jpg") center !important;
-  opacity: 0.5;
-}
-
-/* 1990s */
-.page-id-272 .uw-hero-image, .parent-pageid-272 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWStudentsSunny.jpg") center !important;
-  opacity: 0.5;
-}
-
-/* 2000s */
-.page-id-275 .uw-hero-image, .parent-pageid-275 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWStudentsSnow2.jpg") center !important;
-  opacity: 0.5;
-}
-/* 2010s */
-.page-id-370 .uw-hero-image, .parent-pageid-370 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWCampus-625.jpg") center !important;
-  opacity: 0.5;
-}
-/* index */
-.page-id-85 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWBuildingTrees.jpg") center !important;
-  opacity: 0.5;
-}
-
-/* history project */
-.page-id-62 .uw-hero-image, .parent-pageid-62 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWDecemberSunset.jpg") center !important;
-  opacity: 0.5;
-}
-
-/* contact */
-.page-id-110 .uw-hero-image, .parent-pageid-110 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWFootballflag.jpg") center !important;
-  opacity: 0.5;
-}
-
-/* contact */
-.page-id-107 .uw-hero-image, .parent-pageid-107 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/UWFootballflag.jpg") center !important;
-  opacity: 0.5;
-}
-.page-id-37 .uw-hero-image {
-  background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/Sunny-March-Campus.jpg") center !important;
-  opacity: 0.7;
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-@media only screen and (min-width: 767px) {
-.uw-body-copy h1, .uw-body h1, .home .uw-body-copy h1 {
-	top:-110px;
-	position:absolute;
-	font-size:36px;
-	font-weight:700;
-	color: #4b2e78;
-	margin-bottom:240px;
-	display:block;
-	visibility:visible;
-	
-	
-}
-}
-
-.class-pages ul {
- /* padding: 0 0 !important;*/
- list-style:none;
-}
-
-/*.class-pages li:before {
-	background-color: #85754d;
-	vertical-align:bottom;
-	line-height:0.9;
-	width: 40px;
-    height: 33px;
-    background-image: url(assets/svg/widgets-sprite.svg) no-repeat;
-    background-position: 0 -60px;
-	display:block;
-	z-index: -1;
-	
-}
-
-.class-pages li:hover:before, .class-pages li:focus:before, .class-pages li:hover, .class-pages li:focus {
- 
-  color:#4b2e83;
-}
-
-.class-pages a:after {
-	background-color: #85754d;
-	vertical-align:bottom;
-	line-height:0.9;
-	width: 40px;
-    height: 33px;
-    background-image: url(assets/svg/widgets-sprite.svg) no-repeat;
-    background-position: 0 -60px;
-	display:block;
-	z-index: -1;
-	left: 15px;
-	position:absolute;
-	
-}
-.class-pages a:hover, .class-pages a:focus {
-
-   color:#4b2e83 !important;
-}
-*/
-
-.class-pages li {
-	list-style:none;
-	/*font-family: 'uw-icon';
-	content: "\e90e  ";
-	font-size:40px;*/
-	text-decoration:none;
-/*	color:#85754d;
-	vertical-align:bottom;
-	line-height:0.9;
-	width: 40px;
-    height: 33px;
-    background-image: url(assets/svg/widgets-sprite.svg) no-repeat;
-    background-position: 0 -60px;*/
-	display:block;
-	padding:20px 10px;
-	background-color:#ECE9E2;
-	height:60px;
-	width:400px;
-	margin-bottom:20px;
-	
-	
-}
-.class-pages li a:hover, .class-pages li a:focus {
- 
-  color:#4b2e83;
-}
-
-.class-pages li a:hover:after, .class-pages li a:hover:focus {
-	  background: url(assets/svg/widgets-sprite.svg) no-repeat -39px -194px;
-	
-}
-.class-pages li a
-{
-    font-size: 18px;
-    text-transform: none;
-    color: #85754d;
-    font-weight: 600;
-    top: -5px;
-    padding: 30px 20px 0px 44px;
-   /* z-index: 0;*/
-	display:inline;
-	position:relative;
-	
-  }
-
-.class-pages a:before {
-   position:relative;
-  }
-.class-pages a:before {
- /*   z-index: -1;*/
- 
-  }
-
-.class-pages a:after 
-{
-    content: "";
-    display: inline;
-    position: absolute;
-    top: 28px;
-  }
-  
-.class-pages li a:after {
-    width: 40px;
-    height: 33px;
-    left: 3px;
-    background: url(assets/svg/widgets-sprite.svg) no-repeat 0 -194px;
-	
-  }
