@@ -41,7 +41,7 @@
       </div>
 </div>
 
-<div class="container uw-body">
+<div class="home uw-body">
   <div class="row">
     <div class="hero-content col-md-<?php echo (($sidebar[0]!="on") ? "8" : "12" ) ?> uw-content" role='main'>
 
