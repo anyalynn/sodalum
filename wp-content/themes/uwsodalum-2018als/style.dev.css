@@ -5519,7 +5519,7 @@ a.uw-custom-link:hover {
 }
 .uw-hero-image.hero-height,
 .no-uw-hero-image.hero-height {
-  height: 350px;
+  height: 250px;
 }
 .uw-hero-image.hero-height #hero-container,
 .no-uw-hero-image.hero-height #hero-container {
@@ -5539,7 +5539,7 @@ a.uw-custom-link:hover {
   display: block;
   position: absolute;
   top: 0;
-  height: 360px;
+  height: 260px;
   left: -140px;
   opacity: .3;
   width: 600px;
@@ -5607,7 +5607,6 @@ a.uw-custom-link:hover {
   .uw-hero-image.hero-mobile-image.hero-height,
   .uw-hero-image.hero-mobile-image.hero-height2 {
     height: 480px;
-	display:none;
   }
   .uw-hero-image.hero-mobile-image.hero-height .mobile-image,
   .uw-hero-image.hero-mobile-image.hero-height2 .mobile-image {
@@ -5640,7 +5639,7 @@ a.uw-custom-link:hover {
     position: absolute;
     top: 0;
   }
-  .uw-hero-image.hero-height,  .uw-hero-image.hero-height2  {
+  .uw-hero-image.hero-height {
     padding: 50px 20px 20px;
     display: block;
     height: auto;
@@ -5656,11 +5655,11 @@ a.uw-custom-link:hover {
     top: -60px;
     left: -270px;
   }
- /* .uw-hero-image.hero-height2 {
+  .uw-hero-image.hero-height2 {
     padding: 5px;
     display: block;
     height: auto;
-  }*/
+  }
   .uw-hero-image.hero-height2 .container #hashtag {
     font-size: 16px;
   }
@@ -11245,11 +11244,11 @@ table.services a {
 .page-id-37 .uw-hero-image {
   background: url("http://sodalum.uw.edu/wp-content/uploads/2019/03/Sunny-March-Campus.jpg") center !important;
   opacity: 0.7;
-/*  -webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;*/
+  position: relative;
 }
 @media only screen and (min-width: 767px) {
   .uw-body-copy h1,
@@ -11292,7 +11291,7 @@ table.services a {
     font-family: "Encode Sans Compressed", sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 50px;
     color: #fff;
   }
   #hero-container p {
