@@ -5602,7 +5602,7 @@ a.uw-custom-link:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .uw-hero-image {
-    display: none;
+  /*  display: none;*/
   }
   .uw-hero-image.hero-mobile-image.hero-height,
   .uw-hero-image.hero-mobile-image.hero-height2 {
@@ -5711,7 +5711,7 @@ a.uw-custom-link:hover {
     bottom: 10px;
   }
   div.hero-content.col-md-12.uw-content {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 .page-template-small-hero #mobile-relative.frontpage button.uw-mobile-menu-toggle {
