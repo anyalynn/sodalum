@@ -3,7 +3,7 @@
 
 <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Class Connections - Search </title>
+        <title> Class Connections - Search Results </title>
         <meta charset="utf-8">
  
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -355,16 +355,11 @@ padding-left: 0px !important;
                 <div clas="row">
 
                     <div class="uw-content col-md-8" role="main">
-
-
-                        <a href="https://sodalum.uw.edu/" title="Class Connections">
-                            <h2 class="uw-site-title">Class Connections</h2>
-                        </a>
-
-                      
+                        
+                          
+                                          
                         <div id="main_content" class="uw-body-copy">
-                            <h1 class="search-title">
-                                Search results: </h1>
+                            <h1>Search results: </h1>
                             <gcse:search></gcse:search>
 
 
