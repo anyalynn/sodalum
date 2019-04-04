@@ -355,17 +355,16 @@ padding-left: 0px !important;
                 <div clas="row">
 
                     <div class="uw-content col-md-8" role="main">
-                       
-                          
+                       <nav class="uw-breadcrumbs" aria-label="breadcrumbs"><ul><li><a href="//sodalum.uw.edu" title="UW School of Dentistry">Home</a></li></ul></nav>
+                         
                                           
                         <div id="main_content" class="uw-body-copy">
-                        
-                        <div class="container">
+                                            
                          <h1>Search results: </h1>
-                         </div>
-                            
+                         
+                            <div class="row">
                             <gcse:search></gcse:search>
-
+						</div>
 
                         </div>
 
