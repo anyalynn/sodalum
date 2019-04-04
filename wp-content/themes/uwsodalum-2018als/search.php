@@ -355,11 +355,11 @@ padding-left: 0px !important;
                 <div clas="row">
 
                     <div class="uw-content col-md-8" role="main">
-                        
+                        <h1>Search results: </h1>
                           
                                           
                         <div id="main_content" class="uw-body-copy">
-                            <h1>Search results: </h1>
+                            
                             <gcse:search></gcse:search>
 
 
