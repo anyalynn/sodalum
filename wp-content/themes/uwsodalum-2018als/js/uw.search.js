@@ -113,7 +113,7 @@ UW.Search = Backbone.View.extend({
   submitSearch : function( e )
   {
 	this.$el.find('#uw-search-bar' ).attr( 'name', 'q' )
-	this.$el.find('form').attr('action','https://sodalum.uw.edu/wp-content/themes/uwsodalum-2014/search.php/')
+	this.$el.find('form').attr('action','https://sodalum.uw.edu/wp-content/themes/uwsodalum-2018als/search.php/')
 	return true;
   },
 
