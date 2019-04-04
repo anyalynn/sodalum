@@ -349,16 +349,20 @@ padding-left: 0px !important;
 </li>
 <li class="dawgdrops-item"><a href="https://sodalum.uw.edu/contact/" title="Contact"  id="1853">Contact</a></li>
 </ul></div></nav>
-            <div class="uw-hero-image" style="background-image:url('https://sodalum.uw.edu/wp-content/uploads/2019/03/UWStudentsSunny.jpg');"></div>
+            <div class="uw-hero-image" style="background-image:url('https://sodalum.uw.edu/wp-content/uploads/2019/03/campus-spring-fountain.jpg');"></div>
             <div class="container uw-body">
 
                 <div clas="row">
 
                     <div class="uw-content col-md-8" role="main">
-                        <h1>Search results: </h1>
+                       
                           
                                           
                         <div id="main_content" class="uw-body-copy">
+                        
+                        <div class="container">
+                         <h1>Search results: </h1>
+                         </div>
                             
                             <gcse:search></gcse:search>
 
