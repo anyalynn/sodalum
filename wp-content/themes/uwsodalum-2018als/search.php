@@ -51,7 +51,7 @@ img.emoji {
 }
 </style>
 <link rel='stylesheet' id='contact-form-7-css'  href='https://sodalum.uw.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='uw-master-css'  href='https://sodalum.uw.edu/wp-content/themes/uwsodalum-2014/style.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='uw-master-css'  href='https://sodalum.uw.edu/wp-content/themes/uwsodalum-2018als/style.css?ver=3.6' type='text/css' media='all' />
 <link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;ver=3.6' type='text/css' media='all' />
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js?ver=1.12.0'></script>
 <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?ver=1.0'></script>
@@ -63,7 +63,7 @@ var uw = {"is_multisite":""};
 var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/sodalum.uw.edu\/wp-admin\/admin-ajax.php","nonce":"169df1bdfa","display_exif":"1","display_geo":"","background_color":"white","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","require_name_email":"1","login_url":"https:\/\/sodalum.uw.edu\/wp-login.php?redirect_to=https%3A%2F%2Fsodalum.uw.edu%2F"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://sodalum.uw.edu/wp-content/themes/uwsodalum-2014/js/site.js?ver=1.0.3'></script>
+<script type='text/javascript' src='https://sodalum.uw.edu/wp-content/themes/uwsodalum-2018als/js/site.js?ver=1.0.3'></script>
 <link rel='https://api.w.org/' href='https://sodalum.uw.edu/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sodalum.uw.edu/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sodalum.uw.edu/wp-includes/wlwmanifest.xml" /> 
@@ -83,9 +83,9 @@ var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_
 <!-- END GADWP Universal Analytics -->
 
         <!--[if lt IE 9]>
-            <script src="https://sodalum.uw.edu/wp-content/themes/uwsodalum-2014/assets/ie/js/html5shiv.js" type="text/javascript"></script>
-            <script src="https://sodalum.uw.edu/wp-content/themes/uwsodalum-2014/assets/ie/js/respond.js" type="text/javascript"></script>
-            <link rel='stylesheet' href='https://sodalum.uw.edu/wp-content/themes/uwsodalum-2014/assets/ie/css/ie.css' type='text/css' media='all' />
+            <script src="https://sodalum.uw.edu/wp-content/themes/uwsodalum-2018als/assets/ie/js/html5shiv.js" type="text/javascript"></script>
+            <script src="https://sodalum.uw.edu/wp-content/themes/uwsodalum-2018als/assets/ie/js/respond.js" type="text/javascript"></script>
+            <link rel='stylesheet' href='https://sodalum.uw.edu/wp-content/themes/uwsodalum-2018als/assets/ie/css/ie.css' type='text/css' media='all' />
         <![endif]-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -285,7 +285,7 @@ padding-left: 0px !important;
 
                 <div class="container">
                     <a href="http://uw.edu" title="University of Washington Home" class="uw-patch">University of Washington</a>
-                    <a href="//dental.washington.edu" title="UW SOD Home" class="uw-wordmark" tabindex='-1' aria-hidden='true'>UW School of Dentistry</a>
+                    <a href="//sodalum.uw..edu" title="UW SOD Home" class="uw-wordmark" tabindex='-1' aria-hidden='true'>UW School of Dentistry</a>
                 </div>
                 <div class='align-right'>
       <nav class="uw-thin-strip-nav" role='navigation' aria-label='audience based'>
@@ -349,7 +349,7 @@ padding-left: 0px !important;
 </li>
 <li class="dawgdrops-item"><a href="https://sodalum.uw.edu/contact/" title="Contact"  id="1853">Contact</a></li>
 </ul></div></nav>
-            <div class="uw-hero-image" style="background-image:url('https://sodalum.uw.edu/wp-content/uploads/2016/03/cropped-cropped-blossoms.jpg');"></div>
+            <div class="uw-hero-image" style="background-image:url('https://sodalum.uw.edu/wp-content/uploads/2019/03/UWStudentsSunny.jpg');"></div>
             <div class="container uw-body">
 
                 <div clas="row">
@@ -421,7 +421,7 @@ padding-left: 0px !important;
         <nav role="navigation" aria-label="footer links">
             <ul class="footer-links">
                <li><a href="http://www.uw.edu/accessibility">Accessibility</a></li>
-                <li><a href="http://sodalum.wpengine.com/contact/">Contact Us</a></li>
+                <li><a href="http://sodalum.uw.edu/contact/">Contact Us</a></li>
                   <li><a href="http://www.washington.edu/safety">Campus Safety</a></li>
                               <li><a href="http://www.washington.edu/admin/rules/wac/rulesindex.html">Rules Docket</a></li>
                 <li><a href="https://dental.washington.edu/privacy/">Privacy</a></li>
