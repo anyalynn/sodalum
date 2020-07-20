@@ -11118,7 +11118,44 @@ UW.Alert.Model = Backbone.Model.extend({
       return post
   }
 
-});;// ### UW Search
+});;// ### UW Search Toggle
+
+// This works with the search toggle icon and is only used by the UW Search View
+UW.SearchToggle = Backbone.View.extend({
+
+  el : 'button.uw-search',
+
+  events: {
+    'click' : 'toggleSearchBar'
+  },
+
+  settings : {
+    isOpen : false
+  },
+
+  initialize : function() {},
+
+  toggleSearchBar: function()
+  {
+    this.settings.isOpen = ! this.settings.isOpen
+
+    this.trigger( 'open' )
+
+    UW.$body.toggleClass( 'search-open' )
+
+    if ( this.settings.isOpen ) {
+      this.$el.attr('aria-label', 'close search area');
+      this.$el.attr('aria-expanded', 'true' );
+    } else {
+      this.$el.attr('aria-label', 'open search area');
+      this.$el.attr('aria-expanded', 'false' );
+    }
+
+    return false;
+  },
+
+})
+;// ### UW Search
 
 // This function creates a UW Search
 // For usage please refer to the [UW Web Components Search](http://uw.edu/brand/web/#search)
@@ -11245,43 +11282,6 @@ UW.Search = Backbone.View.extend({
 
 })
 
-;// ### UW Search Toggle
-
-// This works with the search toggle icon and is only used by the UW Search View
-UW.SearchToggle = Backbone.View.extend({
-
-  el : 'button.uw-search',
-
-  events: {
-    'click' : 'toggleSearchBar'
-  },
-
-  settings : {
-    isOpen : false
-  },
-
-  initialize : function() {},
-
-  toggleSearchBar: function()
-  {
-    this.settings.isOpen = ! this.settings.isOpen
-
-    this.trigger( 'open' )
-
-    UW.$body.toggleClass( 'search-open' )
-
-    if ( this.settings.isOpen ) {
-      this.$el.attr('aria-label', 'close search area');
-      this.$el.attr('aria-expanded', 'true' );
-    } else {
-      this.$el.attr('aria-label', 'open search area');
-      this.$el.attr('aria-expanded', 'false' );
-    }
-
-    return false;
-  },
-
-})
 ;// This section builds and populates the quicklinks section (off-canvas right)
 
 UW.QuickLinks = Backbone.View.extend({
