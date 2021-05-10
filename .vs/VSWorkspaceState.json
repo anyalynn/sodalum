@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\wp-content",
+    "\\wp-content\\themes",
+    "\\wp-content\\themes\\uwsodalum-2018als",
+    "\\wp-content\\themes\\uwsodalum-2018als\\js",
+    "\\wp-content\\themes\\uwsodalum-2018als\\setup"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\wp-content\\themes\\uwsodalum-2018als\\js\\uw.dental.js",
   "PreviewInSolutionExplorer": false
 }
