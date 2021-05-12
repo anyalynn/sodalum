@@ -107,3 +107,5 @@ wp-content/themes/uwsodalum-2018/node_modules/*
 wp-content/themes/uwsodalum-2018/node_modules/
 wp-content/themes/uwsodalum-2018/package-lock.json
 wp-content/themes/uwsodalum-2018/package.json
+/wp-content/themes/.vs/VSWorkspaceState.json
+/wp-content/themes/.vs/slnx.sqlite
